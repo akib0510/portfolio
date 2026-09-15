@@ -1,0 +1,11 @@
+# Scratch / preview screenshots
+preview*.png
+live.png
+*.png.bak
+
+# Deploy token (SECRET - never commit)
+../.deploy_token
+.deploy_token
+
+# Server log
+*.log

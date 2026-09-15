@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akib Hossian Dipu — Graphic Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:'#0c0c0d';--panel:'#141416';--ink:'#f4f4f2';--muted:'#9a9a98';--line:'#26262a';--red:'#e11d48';}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',sans-serif;line-height:1.55;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.container{max-width:1240px;margin:0 auto;padding:0 28px}
+section{padding:88px 0}
+
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(12,12,13,.74);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:'Archivo',sans-serif;font-weight:900;font-size:17px;letter-spacing:.02em}
+.logo span{color:var(--red)}
+.nav-links{display:flex;gap:30px;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.nav-links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--red);color:var(--ink);background:transparent;transition:.25s;cursor:pointer}
+.btn:hover{background:var(--red);color:#fff;box-shadow:0 0 24px rgba(225,29,72,.35)}
+.btn.solid{background:var(--red);color:#fff;border-color:var(--red)}
+.menu{display:none}
+
+.hero{padding:150px 0 62px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(900px 420px at 78% -10%, rgba(225,29,72,.18), transparent 60%),radial-gradient(700px 380px at 8% 110%, rgba(225,29,72,.08), transparent 60%);pointer-events:none}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--red);letter-spacing:.3em;text-transform:uppercase;margin-bottom:18px}
+h1{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(42px,8vw,84px);line-height:.98;letter-spacing:-.02em}
+h1 .thin{font-weight:700;color:var(--ink)}
+h1 .accent{color:var(--red)}
+.hero-sub{margin-top:26px;max-width:600px;color:var(--muted);font-size:17px}
+.hero-tag{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.pill{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--line);color:var(--muted);padding:8px 14px}
+.pill b{color:var(--ink)}
+.hero-cta{display:flex;gap:16px;margin-top:38px;flex-wrap:wrap}
+
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:36px;gap:20px;flex-wrap:wrap}
+.sec-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--red);letter-spacing:.28em;text-transform:uppercase}
+.sec-title{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(26px,4vw,42px);line-height:1.05;margin-top:6px}
+.sec-note{color:var(--muted);font-size:13px;max-width:380px;text-align:right}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat-card{position:relative;overflow:hidden;background:var(--panel);border:1px solid var(--line);aspect-ratio:1/1;cursor:pointer}
+.feat-card img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.feat-card:hover img{transform:scale(1.05)}
+.feat-card .cap{position:absolute;left:0;right:0;bottom:0;padding:22px 18px 14px;background:linear-gradient(transparent,rgba(0,0,0,.82));display:flex;justify-content:space-between;align-items:flex-end}
+.feat-card .cap .t{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.feat-card .cap .m{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--red);letter-spacing:.14em}
+
+.filterbar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.tab{padding:10px 18px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);color:var(--muted);background:transparent;cursor:pointer;transition:.2s}
+.tab:hover{color:var(--ink);border-color:var(--red)}
+.tab.active{background:var(--red);border-color:var(--red);color:#fff}
+.grid{columns:3;column-gap:18px}
+.card{position:relative;margin-bottom:18px;break-inside:avoid;overflow:hidden;background:var(--panel);border:1px solid var(--line);cursor:pointer}
+.card img{width:100%;height:auto;display:block;transition:.4s}
+.card:hover img{transform:scale(1.035)}
+.card .ov{position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.85));opacity:0;transition:.3s;display:flex;align-items:flex-end;justify-content:space-between;padding:16px}
+.card:hover .ov{opacity:1}
+.card .ov .c{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--red);letter-spacing:.16em;text-transform:uppercase}
+.empty{font-family:'IBM Plex Mono',monospace;color:var(--muted);padding:40px;text-align:center;border:1px dashed var(--line)}
+
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.portrait{position:relative;overflow:hidden;background:var(--panel);border:1px solid var(--line);aspect-ratio:4/5;max-width:360px}
+.portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(140deg,transparent 60%,rgba(225,29,72,.22))}
+.abt h3{font-family:'Archivo',sans-serif;font-weight:900;font-size:30px;line-height:1.12;margin-bottom:18px}
+.abt h3 span{color:var(--red)}
+.abt p{color:var(--muted);margin-bottom:16px;font-size:15px;max-width:560px}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.skill{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;border:1px solid var(--line);color:var(--ink);padding:8px 13px}
+.stat-row{display:flex;gap:0;margin-top:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{flex:1;padding:18px 8px;text-align:center}
+.stat .n{font-family:'Archivo',sans-serif;font-weight:900;font-size:30px;color:var(--red)}
+.stat .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+
+.contact{text-align:center}
+.contact h2{font-family:'Archivo',sans-serif;font-weight:900;font-size:clamp(30px,5vw,52px);line-height:1.05;max-width:780px;margin:0 auto 24px}
+.contact h2 span{color:var(--red)}
+.contact-note{color:var(--muted);max-width:540px;margin:0 auto 36px;font-size:15px}
+.contact-ways{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:8px}
+
+footer{border-top:1px solid var(--line);padding:34px 0;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.08em}
+.foot-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:200;padding:24px}
+.lb.on{display:flex}
+.lb-inner{max-width:1040px;width:100%;max-height:92vh;display:flex;flex-direction:column;align-items:center}
+.lb img{max-width:100%;max-height:78vh;object-fit:contain;border:1px solid var(--line)}
+.lb-cap{margin-top:16px;text-align:center;max-width:680px}
+.lb-cap .c{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--red);letter-spacing:.2em;text-transform:uppercase}
+.lb-cap .t{font-weight:700;margin-top:8px;font-size:16px}
+.lb-actions{display:flex;gap:12px;margin-top:16px;justify-content:center;flex-wrap:wrap}
+.lb-x{position:fixed;top:20px;right:24px;font-size:34px;color:var(--muted);cursor:pointer;z-index:201;font-family:'IBM Plex Mono',monospace}
+
+@media(max-width:900px){.grid{columns:2}.feat-grid{grid-template-columns:repeat(2,1fr)}.about-grid{grid-template-columns:1fr}.sec-note{text-align:left}}
+@media(max-width:560px){.grid{columns:1}}
+</style>
+</head>
+<body>
+
+<header class="nav"><div class="container nav-inner">
+  <div class="logo">AKIB<span>.</span>DIPU</div>
+  <nav class="nav-links">
+    <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a style="color:var(--red)" href="https://drive.google.com/drive/folders/16MJwVq53hcFiAaRiktaV8_O8V77ZVAvi" target="_blank">Download CV</a>
+  </nav>
+  <a class="btn solid" href="#contact">Hire Me</a>
+</div></header>
+
+<section class="hero"><div class="container">
+  <div class="eyebrow">Graphic Designer — Dhaka, Bangladesh</div>
+  <h1>DESIGN THAT<br><span class="accent">STOPS THE SCROLL.</span></h1>
+  <p class="hero-sub">I'm Akib — I make social posts, thumbnails and posters that earn their place in people's feeds. Two years of client work, zero shortcuts.</p>
+  <div class="hero-tag"><span class="pill">Thumbnails <b>/ 4</b></span><span class="pill">Social Media <b>/ 41</b></span><span class="pill">Posters <b>/ 5</b></span><span class="pill">Video Editing <b>+</b></span></div>
+  <div class="hero-cta">
+    <a class="btn solid" href="#work">See the Work</a>
+    <a class="btn" href="#contact">Start a Project</a>
+  </div>
+</div></section>
+
+<section id="work"><div class="container">
+  <div class="sec-head">
+    <div><div class="sec-eyebrow">— Selected Work</div><div class="sec-title">Featured Projects</div></div>
+    <div class="sec-note">A few favorites — work that got a second look, a share, or a client saying yes.</div>
+  </div>
+  <div class="feat-grid" id="featgrid">
+<div class="feat-card" onclick="openLb('assets/1FptW2Y2dJ9pz71u7-ChshjNvKHdflu96.jpg')"><img src="assets/1FptW2Y2dJ9pz71u7-ChshjNvKHdflu96.jpg" alt="Thumbnails & Banners" loading="lazy"><div class="cap"><span class="t">Thumbnails & Banners</span><span class="m">View</span></div></div>
+<div class="feat-card" onclick="openLb('assets/1Gayo5aSsX6IKPga6XGaO0EGjGHjbSSva.jpg')"><img src="assets/1Gayo5aSsX6IKPga6XGaO0EGjGHjbSSva.jpg" alt="Thumbnails & Banners" loading="lazy"><div class="cap"><span class="t">Thumbnails & Banners</span><span class="m">View</span></div></div>
+<div class="feat-card" onclick="openLb('assets/1s8hX1WJZwH7R5ddHTGpikpsOVcLRj51B.jpg')"><img src="assets/1s8hX1WJZwH7R5ddHTGpikpsOVcLRj51B.jpg" alt="Thumbnails & Banners" loading="lazy"><div class="cap"><span class="t">Thumbnails & Banners</span><span class="m">View</span></div></div>
+<div class="feat-card" onclick="openLb('assets/1sPSmkfNTxnpy6UA4G37RuNUYcVAKvIF7.jpg')"><img src="assets/1sPSmkfNTxnpy6UA4G37RuNUYcVAKvIF7.jpg" alt="Thumbnails & Banners" loading="lazy"><div class="cap"><span class="t">Thumbnails & Banners</span><span class="m">View</span></div></div>
+<div class="feat-card" onclick="openLb('assets/10AQSWB_sB4DXkHPbwr-uwgap5HYfQvgf.jpg')"><img src="assets/10AQSWB_sB4DXkHPbwr-uwgap5HYfQvgf.jpg" alt="Social Media & Branding" loading="lazy"><div class="cap"><span class="t">Social Media & Branding</span><span class="m">View</span></div></div>
+<div class="feat-card" onclick="openLb('assets/1h7co0pBcLXDPXUPFt2GF8821P9Ab-0X0.jpg')"><img src="assets/1h7co0pBcLXDPXUPFt2GF8821P9Ab-0X0.jpg" alt="Social Media & Branding" loading="lazy"><div class="cap"><span class="t">Social Media & Branding</span><span class="m">View</span></div></div>
+  </div>
+
+  <div class="sec-head" style="margin-top:70px">
+    <div><div class="sec-eyebrow">— Archive</div><div class="sec-title">All Work</div></div>
+  </div>
+  <div class="filterbar">
+<button class="tab active" onclick="filter('all')">All (50)</button>
+<button class="tab" onclick="filter('thumbnail')">01 · Thumbnails & Banners (4)</button>
+<button class="tab" onclick="filter('social')">02 · Social Media & Branding (41)</button>
+<button class="tab" onclick="filter('poster')">03 · Posters & Editorial (5)</button>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none">No work in this category yet.</div>
+</div></section>
+
+<section id="about"><div class="container">
+  <div class="sec-head"><div><div class="sec-eyebrow">— About</div><div class="sec-title">The designer behind the work</div></div></div>
+  <div class="about-grid">
+    <div class="portrait"><img src="assets/profile_photo.png" alt="Akib Hossian Dipu"></div>
+    <div class="abt">
+      <h3>Design isn't decoration. It's how a brand talks.</h3>
+      <p>I'm a graphic designer from Dhaka with a journalism background — which means I think about who's reading, not just how it looks. At PsyCoach Bangladesh I turn brand ideas into social media that actually gets engagement.</p>
+      <p>Every piece starts with one question: what should this make someone feel, or do? Then I build it clean and sharp. When it doesn't hold attention, I redo it. No egos, just results.</p>
+      <div class="skills"><span class="skill">Photoshop</span><span class="skill">Illustrator</span><span class="skill">Premier Pro</span><span class="skill">Canva Pro</span><span class="skill">CapCut</span><span class="skill">Brand Identity</span><span class="skill">Social Creatives</span><span class="skill">Thumbnails</span><span class="skill">Print & Editorial</span><span class="skill">Video Editing</span></div>
+      <div class="stat-row">
+        <div class="stat"><div class="n">50+</div><div class="l">Projects shipped</div></div>
+        <div class="stat"><div class="n">6</div><div class="l">Tools I'm fluent in</div></div>
+        <div class="stat"><div class="n">2+</div><div class="l">Years designing</div></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container contact">
+  <div class="sec-eyebrow" style="text-align:center">— Contact</div>
+  <h2>Got a project that deserves better visuals?</h2>
+  <p class="contact-note">I'd love to hear about it. I work remotely across time zones, ship fast, and don't disappear when you need a revision.</p>
+  <div class="contact-ways">
+    <a class="btn solid" href="mailto:akibdipu79@gmail.com">Email Me</a>
+    <a class="btn" href="https://wa.me/8801612064436" target="_blank">WhatsApp</a>
+    <a class="btn" href="https://www.linkedin.com/in/akib-hossian-dipu/" target="_blank">LinkedIn</a>
+    <a class="btn" href="https://drive.google.com/drive/folders/16MJwVq53hcFiAaRiktaV8_O8V77ZVAvi" target="_blank">Full Portfolio</a>
+  </div>
+</div></section>
+
+<footer><div class="container foot-inner">
+  <span>© 2026 Akib Hossian Dipu</span><span>Graphic Designer · Dhaka · UTC+6</span>
+</div></footer>
+
+<div class="lb" id="lb" onclick="if(event.target===this)closeLb()">
+  <div class="lb-x" onclick="closeLb()">&times;</div>
+  <div class="lb-inner">
+    <img id="lb-img" src="" alt="">
+    <div class="lb-cap"><div class="c" id="lb-cat"></div><div class="t" id="lb-cap2"></div></div>
+    <div class="lb-actions">
+      <a class="btn" href="https://drive.google.com/drive/folders/16MJwVq53hcFiAaRiktaV8_O8V77ZVAvi" target="_blank">Full Res ↗</a>
+      <a class="btn" href="mailto:akibdipu79@gmail.com">Request Original</a>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = [{"file": "assets/1FptW2Y2dJ9pz71u7-ChshjNvKHdflu96.jpg", "cat": "thumbnail", "featured": true, "caption": ""}, {"file": "assets/1Gayo5aSsX6IKPga6XGaO0EGjGHjbSSva.jpg", "cat": "thumbnail", "featured": true, "caption": ""}, {"file": "assets/1s8hX1WJZwH7R5ddHTGpikpsOVcLRj51B.jpg", "cat": "thumbnail", "featured": true, "caption": ""}, {"file": "assets/1sPSmkfNTxnpy6UA4G37RuNUYcVAKvIF7.jpg", "cat": "thumbnail", "featured": true, "caption": ""}, {"file": "assets/10AQSWB_sB4DXkHPbwr-uwgap5HYfQvgf.jpg", "cat": "social", "featured": true, "caption": ""}, {"file": "assets/1h7co0pBcLXDPXUPFt2GF8821P9Ab-0X0.jpg", "cat": "social", "featured": true, "caption": ""}, {"file": "assets/11R31DvOB7_DCTb32MEeFOsLHNIsE6h5e.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/139bwQjCaXaBQnaGgiSfvCzuiF4e_TSyA.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/17YeL2U9v53c9j02yifsnUqC9YMAC6PNg.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/17aLDkRuBBEvz-ss3T9j5PFTADkoYaNaf.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/17vWvV-c67r8cVIjvDeA32WTe4KhtbQoN.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/18uTBwIZQ7Vfzb376ACl-sodqIu_TAQL2.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/19WkkFwdjN1X63ixtDt5F0J02ESqo1CK3.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1AjVPUxP-CuSi25YM9PpzAgw_41V0vgiN.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1GWFVcSMaqo2Ql9ghvbmw65gDTf8FW53t.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1KJNVwGv8ivk-0nGuj-s7DNIkBSLUFgrB.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1L1N5Z3voE6wzqty9Ow2mkJzGM2j93H0b.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1Ma7ypg3nD8uugQIl9SgVwFO5bg3d4Fq_.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1NU-9viDHjd0rph-c66WJmIPg5_lxuEiN.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1QTsbbagn5r_fGD1ldpgg6EtCSg3_PmUt.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1QgZQOODcWmK3OiH1Am3FtrXwznTZNEkQ.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1SOqvM9ZKnS9gcUfjQc4faBY15p0XDtWb.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1TqiriYp6DQhZwaxXcVi0qxWO7pVHOww8.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1U7hdQdR9vvJ5XZBAQDdel1e56R2f9Ej3.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1WHHTQ-tUuD06LZxvu-t-8Lfmbv6Q-yWX.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1XbFKhx4FOm71VwnQIQVlNhr-nT3FoYur.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1_NnxtScR5tRUNIW95XIMBIvy5detLjXG.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1_c6TokWvCBCaCqt6cxnysPRQNpmqoBm_.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1azkxvWRK-RWDgzp1hmb7pMoeurldk7CU.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1bjz9d0cqJvup_yUIZIZHDcK7xfXPN8o7.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1cqE7oYlTEfbn0vMsPQm-nV3JHqeA-L0b.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1dMGBSe3O5lLKvxGeT9x8oj7K-beas91b.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1fe08VNS4T0VPurBeq1m5LV7K8zzhqN4r.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1h6x2Z0cbQ11Tv2JPmdOVunz32wlRwbks.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1hJjZ3Lto-fCAaZwzySxPb0U-iTQ7bxfw.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1hUH3JELnC-ndoX7Bli2UV-vsu33AvVYG.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1mX_baR_FmHbrfGKAI9ifRlia3LcpfEL2.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1muxxluHv0M81-j1nLAukx0HicqK-2Kyb.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1r7zMNYXbFDeCTq0kz2VpsbWhz6XUxpZ8.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1rauicInGkAtv24HmAFOv_3elfODSm6kc.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1tO3dDPOVDsmHNNfFQzhwfUIdgeqdx9Rm.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1tuXgByqO2uP-J6iKOusj0tZlNTQf1T6p.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1vFpUOzx76Z_Sqb7ylSwdbFGvsACIOVJS.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1wO84flAo9hIcCfsRdn1uL5jwXdAaHL1y.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/1xImX6gA1kuzcU64L3nhj3sPp__UNfCUA.jpg", "cat": "social", "featured": false, "caption": ""}, {"file": "assets/12lm-qkdmYCftZlZ2rfGqAEAJSpdopZIv.jpg", "cat": "poster", "featured": false, "caption": ""}, {"file": "assets/1GtB9h2i-4jp7MBgURcFjNv6JSzCYjoGg.jpg", "cat": "poster", "featured": false, "caption": ""}, {"file": "assets/1Lgc_wxgOTgd-wxUREh-2ZrvY-qvOBUz0.jpg", "cat": "poster", "featured": false, "caption": ""}, {"file": "assets/1MWBRM1PXFEAVVdrKHHTeSCWk-NU3Iu_l.jpg", "cat": "poster", "featured": false, "caption": ""}, {"file": "assets/1UBwwBRDs98lubq4i334V9FrAbTwjzYyO.jpg", "cat": "poster", "featured": false, "caption": ""}];
+const FEAT = [{"file": "assets/1FptW2Y2dJ9pz71u7-ChshjNvKHdflu96.jpg", "cat": "thumbnail", "featured": true, "caption": ""}, {"file": "assets/1Gayo5aSsX6IKPga6XGaO0EGjGHjbSSva.jpg", "cat": "thumbnail", "featured": true, "caption": ""}, {"file": "assets/1s8hX1WJZwH7R5ddHTGpikpsOVcLRj51B.jpg", "cat": "thumbnail", "featured": true, "caption": ""}, {"file": "assets/1sPSmkfNTxnpy6UA4G37RuNUYcVAKvIF7.jpg", "cat": "thumbnail", "featured": true, "caption": ""}, {"file": "assets/10AQSWB_sB4DXkHPbwr-uwgap5HYfQvgf.jpg", "cat": "social", "featured": true, "caption": ""}, {"file": "assets/1h7co0pBcLXDPXUPFt2GF8821P9Ab-0X0.jpg", "cat": "social", "featured": true, "caption": ""}];
+const CATS = {"thumbnail": {"num": "01", "label": "Thumbnails & Banners", "desc": "Widescreen designs built to win the click on YouTube and beyond."}, "social": {"num": "02", "label": "Social Media & Branding", "desc": "Square posts and campaign creatives designed to stop the scroll and drive engagement."}, "poster": {"num": "03", "label": "Posters & Editorial", "desc": "Vertical, print-ready layouts that tell a story at a glance."}};
+const CATDESC = {"thumbnail": {"num": "01", "label": "Thumbnails & Banners", "desc": "Widescreen designs built to win the click on YouTube and beyond."}, "social": {"num": "02", "label": "Social Media & Branding", "desc": "Square posts and campaign creatives designed to stop the scroll and drive engagement."}, "poster": {"num": "03", "label": "Posters & Editorial", "desc": "Vertical, print-ready layouts that tell a story at a glance."}};
+let current='all';
+
+function filter(cat){
+  current=cat;
+  event.target.classList.add('active');
+  document.querySelectorAll('.tab').forEach(function(t){if(t!==event.target)t.classList.remove('active')});
+  const grid=document.getElementById('grid');
+  const items=(cat==='all')?DATA:DATA.filter(function(i){return i.cat===cat});
+  grid.innerHTML=items.map(cardHTML).join('');
+  document.getElementById('empty').style.display=items.length?'none':'block';
+}
+function cardHTML(i){
+  return '<div class="card" onclick="openLb(''+i.file+'')">'+
+    '<img src="'+i.file+'" loading="lazy" alt="'+catLabel(i.cat)+'">'+
+    '<div class="ov"><span class="c">'+catLabel(i.cat)+'</span></div></div>';
+}
+function catLabel(c){return (CATS[c]?CATS[c].label:'')}
+function openLb(file){
+  const it=DATA.find(function(x){return x.file===file});
+  document.getElementById('lb-img').src=it.file;
+  document.getElementById('lb-cat').textContent=catLabel(it.cat);
+  var cap=(it.caption?it.caption:(it.file.split('/').pop().slice(0,34)));
+  document.getElementById('lb-cap2').textContent=cap;
+  document.getElementById('lb').classList.add('on');
+}
+function closeLb(){document.getElementById('lb').classList.remove('on')}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLb()});
+
+// featured
+document.getElementById('featgrid').innerHTML=FEAT.map(function(i){
+  return '<div class="feat-card" onclick="openLb(''+i.file+'')">'+
+    '<img src="'+i.file+'" alt="Featured" loading="lazy"><div class="cap"><span class="t">'+catLabel(i.cat)+'</span><span class="m">View</span></div></div>';
+}).join('');
+// initial grid
+document.getElementById('grid').innerHTML=DATA.map(cardHTML).join('');
+
+// helper — set first tab active on load (static HTML already marks All active)
+</script>
+</body>
+</html>

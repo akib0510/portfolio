@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUILL — Customize Your Site</title>
+<style>
+:root{--bg:#0f0f11;--panel:#17171a;--line:#26262b;--ink:#f2f2f0;--muted:#9b9b98;--red:#e11d48;--ok:#22c55e;--warn:#f59e0b}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.5}
+.top{position:sticky;top:0;background:rgba(15,15,17,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 22px;display:flex;align-items:center;justify-content:space-between;z-index:50}
+.top .brand{font-weight:800;letter-spacing:.04em}
+.top .brand span{color:var(--red)}
+.top .actions{display:flex;gap:10px;align-items:center}
+#status{font-size:12px;color:var(--muted)}
+button{padding:9px 16px;font-size:13px;font-weight:700;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer;border-radius:6px}
+button:hover{border-color:var(--red)}
+button.primary{background:var(--red);color:#fff;border-color:var(--red)}
+button.ok{background:transparent;border-color:var(--ok);color:var(--ok)}
+.wrap{max-width:1200px;margin:0 auto;padding:24px}
+h2{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin:26px 0 14px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.grid-fields{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-size:11px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.field input,.field textarea,.field select{background:var(--panel);border:1px solid var(--line);color:var(--ink);padding:8px 10px;border-radius:6px;font-size:13px;font-family:inherit}
+.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--red)}
+.field textarea{min-height:64px;resize:vertical}
+.field.wide{grid-column:1/-1}
+.cat-blocks{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.block{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+.block h3{font-size:13px;font-weight:700;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.block h3 .n{font-family:monospace;color:var(--red)}
+.block .thumb{height:54px;background:#000;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-bottom:8px}
+.block .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.block .row{display:flex;gap:8px;align-items:center;margin-top:8px;flex-wrap:wrap}
+.block select{background:var(--bg);border:1px solid var(--line);color:var(--ink);padding:6px 8px;border-radius:6px;font-size:12px}
+.block input[type=text]{flex:1;min-width:120px;background:var(--bg);border:1px solid var(--line);color:var(--ink);padding:6px 8px;border-radius:6px;font-size:12px}
+.toggle{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.toggle input{accent-color:var(--red)}
+.swatch{display:flex;align-items:center;gap:8px}
+.swatch input[type=color]{width:40px;height:32px;border:none;background:transparent;cursor:pointer}
+.color-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.color-grid .field input{height:36px;padding:2px}
+.summary{position:sticky;bottom:0;background:rgba(15,15,17,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:14px 22px;display:flex;gap:16px;align-items:center;justify-content:space-between;z-index:50}
+.summary .left{color:var(--muted);font-size:12px}
+pre{padding:14px;background:var(--panel);border:1px solid var(--line);border-radius:8px;font-size:11px;color:#8be9fd;max-height:280px;overflow:auto;margin-top:10px}
+.tabs{display:flex;gap:6px;margin:20px 0 6px;flex-wrap:wrap}
+.tabs button.active{background:var(--red);border-color:var(--red);color:#fff}
+.work-grid{display:none}
+.work-grid.on{display:block}
+.toast{position:fixed;bottom:80px;right:22px;background:var(--ok);color:#000;padding:12px 18px;border-radius:8px;font-weight:700;font-size:13px;display:none;z-index:200}
+.toast.err{background:var(--red);color:#fff}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="brand">QUILL<span>.</span> — Customize your portfolio</div>
+  <div class="actions">
+    <a href="index.html" target="_blank"><button>View Site ↗</button></a>
+    <span id="status"></span>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="tabs" id="tabs">
+    <button class="active" data-tab="content">Content</button>
+    <button data-tab="work">Work Items</button>
+    <button data-tab="theme">Colors</button>
+    <button data-tab="json">JSON</button>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="tab-pane" id="pane-content">
+    <h2>Identity</h2>
+    <div class="grid-fields">
+      <div class="field"><label>Name</label><input id="identity.name" data-g="identity" data-k="name"></div>
+      <div class="field"><label>Site theme word (logo)</label><input id="identity.theme_site" data-g="identity" data-k="theme_site"></div>
+      <div class="field"><label>Role</label><input id="identity.role" data-g="identity" data-k="role"></div>
+      <div class="field"><label>Availability</label><input id="identity.availability" data-g="identity" data-k="availability"></div>
+      <div class="field"><label>Location</label><input id="identity.location" data-g="identity" data-k="location"></div>
+    </div>
+
+    <h2>Hero</h2>
+    <div class="grid-fields">
+      <div class="field"><label>Eyebrow</label><input id="hero.eyebrow" data-g="hero" data-k="eyebrow"></div>
+      <div class="field"><label>Headline line 1</label><input id="hero.line1" data-g="hero" data-k="line1"></div>
+      <div class="field"><label>Headline line 2 (accent red)</label><input id="hero.line2" data-g="hero" data-k="line2"></div>
+      <div class="field wide"><label>Subheadline</label><textarea id="hero.sub" data-g="hero" data-k="sub"></textarea></div>
+      <div class="field"><label>Button 1</label><input id="hero.cta1" data-g="hero" data-k="cta1"></div>
+      <div class="field"><label>Button 2</label><input id="hero.cta2" data-g="hero" data-k="cta2"></div>
+    </div>
+
+    <h2>Featured &amp; Archive</h2>
+    <div class="grid-fields">
+      <div class="field"><label>Featured eyebrow</label><input id="featured.eyebrow" data-g="featured" data-k="eyebrow"></div>
+      <div class="field"><label>Featured title</label><input id="featured.title" data-g="featured" data-k="title"></div>
+      <div class="field wide"><label>Featured note</label><input id="featured.note" data-g="featured" data-k="note"></div>
+      <div class="field"><label>Archive eyebrow</label><input id="archive.eyebrow" data-g="archive" data-k="eyebrow"></div>
+      <div class="field"><label>Archive title</label><input id="archive.title" data-g="archive" data-k="title"></div>
+    </div>
+
+    <h2>Categories (labels &amp; descriptions)</h2>
+    <div class="cat-blocks" id="cat-editor"></div>
+
+    <h2>Stats</h2>
+    <div class="grid-fields" id="stats-editor"></div>
+
+    <h2>About</h2>
+    <div class="grid-fields">
+      <div class="field"><label>Eyebrow</label><input id="about.eyebrow" data-g="about" data-k="eyebrow"></div>
+      <div class="field"><label>Title</label><input id="about.title" data-g="about" data-k="title"></div>
+      <div class="field wide"><label>Heading</label><input id="about.heading" data-g="about" data-k="heading"></div>
+      <div class="field wide"><label>Paragraph 1</label><textarea id="about.p1" data-g="about" data-k="p1"></textarea></div>
+      <div class="field wide"><label>Paragraph 2</label><textarea id="about.p2" data-g="about" data-k="p2"></textarea></div>
+      <div class="field wide"><label>Skills (comma separated)</label><input id="about.skills" data-g="about" data-k="skills" data-split=","></div>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="grid-fields">
+      <div class="field"><label>Eyebrow</label><input id="contact.eyebrow" data-g="contact" data-k="eyebrow"></div>
+      <div class="field wide"><label>Title</label><textarea id="contact.title" data-g="contact" data-k="title"></textarea></div>
+      <div class="field wide"><label>Sub (note)</label><textarea id="contact.sub" data-g="contact" data-k="sub"></textarea></div>
+      <div class="field"><label>Email</label><input id="contact.email" data-g="contact" data-k="email"></div>
+      <div class="field"><label>WhatsApp (digits only, include country code)</label><input id="contact.whatsapp" data-g="contact" data-k="whatsapp"></div>
+      <div class="field wide"><label>LinkedIn URL</label><input id="contact.linkedin" data-g="contact" data-k="linkedin"></div>
+      <div class="field wide"><label>Portfolio / Drive URL</label><input id="contact.drive" data-g="contact" data-k="drive"></div>
+      <div class="field"><label>Email button</label><input id="contact.email_btn" data-g="contact" data-k="email_btn"></div>
+      <div class="field"><label>WhatsApp button</label><input id="contact.whatsapp_btn" data-g="contact" data-k="whatsapp_btn"></div>
+      <div class="field"><label>LinkedIn button</label><input id="contact.linkedin_btn" data-g="contact" data-k="linkedin_btn"></div>
+      <div class="field"><label>Portfolio button</label><input id="contact.portfolio_btn" data-g="contact" data-k="portfolio_btn"></div>
+    </div>
+
+    <h2>Footer &amp; Lightbox</h2>
+    <div class="grid-fields">
+      <div class="field"><label>Footer left</label><input id="footer.line1" data-g="footer" data-k="line1"></div>
+      <div class="field"><label>Footer right</label><input id="footer.line2" data-g="footer" data-k="line2"></div>
+      <div class="field"><label>Lightbox 'Full Res' text</label><input id="lightbox.full" data-g="lightbox" data-k="full"></div>
+      <div class="field"><label>Lightbox 'Request Original'</label><input id="lightbox.request" data-g="lightbox" data-k="request"></div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="tab-pane work-grid" id="pane-work">
+    <div class="cat-blocks" id="work-editor"></div>
+  </section>
+
+  <!-- THEME -->
+  <section class="tab-pane" id="pane-theme">
+    <h2>Theme Colors</h2>
+    <div class="color-grid">
+      <div class="field swatch"><label>Background</label><input type="color" id="theme.bg"></div>
+      <div class="field swatch"><label>Panel / card</label><input type="color" id="theme.panel"></div>
+      <div class="field swatch"><label>Text</label><input type="color" id="theme.ink"></div>
+      <div class="field swatch"><label>Muted text</label><input type="color" id="theme.muted"></div>
+      <div class="field swatch"><label>Borders</label><input type="color" id="theme.line"></div>
+      <div class="field swatch"><label>Accent (red)</label><input type="color" id="theme.red"></div>
+    </div>
+    <p style="color:var(--muted);font-size:12px;margin-top:12px">Pick colors → the site rebuilds with your theme. (Add a color via the swatch; the box keeps the hex.)</p>
+  </section>
+
+  <!-- JSON -->
+  <section class="tab-pane" id="pane-json">
+    <h2>Raw JSON</h2>
+    <p style="color:var(--muted);font-size:12px;margin:8px 0">All content, work items and colors in one editable block. Changes here override the form.</p>
+    <textarea id="rawjson" style="width:100%;min-height:420px;background:var(--panel);border:1px solid var(--line);border-radius:8px;color:#8be9fd;font-family:monospace;font-size:12px;padding:12px"></textarea>
+  </section>
+
+</div>
+
+<div class="summary">
+  <div class="left" id="summary"></div>
+  <div style="display:flex;gap:10px">
+    <button id="reset">Reset to last saved</button>
+    <button class="primary" id="save">Save &amp; Rebuild</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let DATA = null;
+const $=s=>document.querySelector(s);
+const $$=s=>document.querySelectorAll(s);
+
+async function load(){
+  const r = await fetch('content.json?_='+Date.now());
+  DATA = await r.json();
+  bindEditors.identity(); bindEditors.categories(); bindEditors.stats();
+  bindEditors.work(); bindEditors.theme(); bindEditors.json();
+  updateSummary();
+}
+const groups = ['identity','hero','featured','archive','about','contact','footer','lightbox'];
+
+function syncInputs(){
+  // write every [data-g][data-k] field into DATA
+  $$('[data-g]').forEach(inp=>{
+    const g=inp.dataset.g, k=inp.dataset.k;
+    if(!DATA[g]) DATA[g]={};
+    let v=inp.value;
+    if(inp.dataset.split) v=inp.value.split(inp.dataset.split).map(s=>s.trim()).filter(Boolean);
+    DATA[g][k]=v;
+  });
+  // color swatches
+  ['bg','panel','ink','muted','line','red'].forEach(k=>{
+    const el=$('#theme.'+k); if(el) DATA.theme[k]=el.value;
+  });
+  // stats 3x (n,l)
+  ['projects','toolkits','years'].forEach((sk,i)=>{
+    const n=$('#stat_n_'+i), l=$('#stat_l_'+i);
+    if(n&&l) DATA.stats[sk]={n:n.value,l:l.value};
+  });
+  // raw JSON overrides everything (parse it live)
+  try{
+    const raw=$('#rawjson').value;
+    const parsed=JSON.parse(raw);
+    // only override if it parsed fully; merge
+    DATA=parsed;
+  }catch(e){ /* leave DATA as form-held */ }
+}
+
+const bindEditors = {
+  identity(){
+    groups.forEach(g=>{
+      const obj=DATA[g]||{};
+      $$('[data-g="'+g+'"]').forEach(inp=>{
+        const k=inp.dataset.k; let v=obj[k];
+        if(Array.isArray(v)) v=v.join(inp.dataset.split||', ');
+        if(v!=null) inp.value=v;
+      });
+    });
+  },
+  categories(){
+    const box=$('#cat-editor'); box.innerHTML='';
+    Object.entries(DATA.categories).forEach(([key,cat])=>{
+      const d=document.createElement('div'); d.className='block';
+      d.innerHTML='<h3><span>'+key.toUpperCase()+'</span><span class="n">#'+cat.num+'</span></h3>'+
+        '<div class="field"><label>Number</label><input data-cg="'+key+'" data-ck="num" value="'+cat.num+'"></div>'+
+        '<div class="field"><label>Label</label><input data-cg="'+key+'" data-ck="label" value="'+esc(cat.label)+'"></div>'+
+        '<div class="field"><label>Description</label><input data-cg="'+key+'" data-ck="desc" value="'+esc(cat.desc)+'"></div>';
+      box.appendChild(d);
+    });
+  },
+  stats(){
+    const box=$('#stats-editor'); box.innerHTML='';
+    ['projects','toolkits','years'].forEach((sk,i)=>{
+      const s=DATA.stats[sk]; const d=document.createElement('div'); d.className='field';
+      d.innerHTML='<label>'+sk+' — number</label><input id="stat_n_'+i+'" value="'+esc(s.n)+'">'+
+        '<label style="margin-top:8px">'+sk+' — label</label><input id="stat_l_'+i+'" value="'+esc(s.l)+'">';
+      box.appendChild(d);
+    });
+  },
+  work(){
+    const box=$('#work-editor'); box.innerHTML='';
+    DATA.work.forEach((w,i)=>{
+      const d=document.createElement('div'); d.className='block'; const c=DATA.categories;
+      const opts=Object.keys(c).map(k=>'<option value="'+k+'"'+(w.cat===k?' selected':'')+'>'+esc(c[k].label)+'</option>').join('');
+      d.innerHTML='<div class="thumb"><img src="'+esc(w.file)+'" loading="lazy"></div>'+
+        '<div style="font-size:11px;color:var(--muted)">'+esc(w.file)+'</div>'+
+        '<div class="row"><select data-w="'+i+'" data-wk="cat">'+opts+'</select>'+
+        '<span class="toggle"><input type="checkbox" data-w="'+i+'" data-wk="featured"'+(w.featured?' checked':'')+'>&nbsp;Featured</span></div>'+
+        '<div class="row"><input type="text" placeholder="Caption (shows in lightbox)" data-w="'+i+'" data-wk="caption" value="'+esc(w.caption||'')+'"></div>';
+      box.appendChild(d);
+    });
+  },
+  theme(){
+    ['bg','panel','ink','muted','line','red'].forEach(k=>{
+      const el=$('#theme.'+k); if(el) el.value=DATA.theme[k]||'#000000';
+    });
+  },
+  json(){
+    $('#rawjson').value=JSON.stringify(DATA,null,2);
+  }
+};
+
+function esc(s){s=s==null?'':String(s);return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+// live-binding: before save, capture all editor state into DATA
+function captureAll(){
+  // category fields
+  $$('[data-cg]').forEach(inp=>{
+    const g=inp.dataset.cg, k=inp.dataset.ck;
+    if(!DATA.categories[g])DATA.categories[g]={};
+    DATA.categories[g][k]=inp.value;
+  });
+  // work fields
+  $$('[data-w]').forEach(el=>{
+    if(el.dataset.wk==='featured') DATA.work[+el.dataset.w].featured=el.checked;
+    else if(el.dataset.wk==='cat') DATA.work[+el.dataset.w].cat=el.value;
+    else DATA.work[+el.dataset.w][el.dataset.wk]=el.value;
+  });
+  syncInputs();         // groups + colors + stats (raw also overwrites DATA)
+  $('#rawjson').value=JSON.stringify(DATA,null,2);
+}
+
+function updateSummary(){
+  const cats=DATA.categories, f=DATA.work.filter(w=>w.featured).length;
+  $('#summary').textContent=DATA.work.length+' work items · '+f+' featured · theme '+DATA.theme.bg+' · '+(DATA.hero.line1||'').toUpperCase();
+}
+
+// tabs
+$$('.tabs button').forEach(b=>{
+  b.onclick=()=>{
+    $$('.tabs button').forEach(x=>x.classList.remove('active')); b.classList.add('active');
+    $$('.tab-pane').forEach(p=>p.style.display='none');
+    $('#pane-'+b.dataset.tab).style.display='block';
+  };
+});
+$('#pane-content').style.display='block'; $('#pane-work').style.display='none'; $('#pane-theme').style.display='none'; $('#pane-json').style.display='none';
+
+$('#reset').onclick=async()=>{ await load(); toast('Reset to last saved'); };
+$('#save').onclick=async()=>{
+  captureAll();
+  const btn=$('#save'); btn.disabled=true; btn.textContent='Saving…'; $('#status').textContent='';
+  try{
+    const r=await fetch('/save',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(DATA)});
+    const j=await r.json();
+    if(j.ok){ toast('Saved & rebuilt! Refresh the site.','ok'); $('#status').textContent=j.message; }
+    else { toast('Error: '+j.error,'err'); $('#status').textContent=j.error; }
+  }catch(e){ toast('Save failed: '+e.message,'err'); }
+  btn.disabled=false; btn.textContent='Save & Rebuild';
+};
+$('#rawjson').addEventListener('input',()=>{ try{ DATA=JSON.parse($('#rawjson').value); updateSummary(); }catch(e){} });
+
+function toast(msg,cls){ const t=$('#toast'); t.textContent=msg; t.className='toast '+(cls||''); t.style.display='block'; setTimeout(()=>t.style.display='none',2800); }
+
+// make color chooser also store the hex text manually (native picker is fine)
+load(); updateSummary();
+</script>
+</body>
+</html>
