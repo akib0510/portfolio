@@ -23,7 +23,7 @@ export default function ContactSection({ personal }) {
   };
 
   return (
-    <section id="contact" className="py-24 border-t border-neutral-900 relative">
+    <section id="contact" className="pt-14 pb-20 sm:pt-16 sm:pb-24 border-t border-neutral-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           {/* Left Column: Direct info & social cards */}

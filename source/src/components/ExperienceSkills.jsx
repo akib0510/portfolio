@@ -3,11 +3,11 @@ import { Briefcase, CheckCircle, Award, Sparkles, BookOpen, FileText, Download, 
 
 export default function ExperienceSkills({ personal, experiences, skills, education, onOpenCV }) {
   return (
-    <section id="experience" className="py-20 sm:py-24 border-t border-neutral-900 relative">
+    <section id="experience" className="pt-16 pb-12 sm:pt-20 sm:pb-16 border-t border-neutral-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-2xl mb-10">
           <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400 mb-2 font-mono">
             <Briefcase className="w-4 h-4" />
             <span>Career, Skills & Education</span>
@@ -21,7 +21,7 @@ export default function ExperienceSkills({ personal, experiences, skills, educat
         </div>
 
         {/* Dedicated Curriculum Vitae (CV) Showcase Bar */}
-        <div className="mb-14 p-6 sm:p-7 rounded-3xl bg-gradient-to-r from-neutral-900 via-neutral-900/90 to-neutral-950 border border-neutral-800 shadow-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden group hover:border-amber-500/40 transition-all duration-300">
+        <div className="mb-12 p-6 sm:p-7 rounded-3xl bg-gradient-to-r from-neutral-900 via-neutral-900/90 to-neutral-950 border border-neutral-800 shadow-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden group hover:border-amber-500/40 transition-all duration-300">
           <div className="absolute top-0 right-0 w-80 h-full bg-gradient-to-l from-amber-500/5 to-transparent pointer-events-none" />
 
           <div className="flex items-start sm:items-center gap-4 relative z-10">
@@ -63,10 +63,10 @@ export default function ExperienceSkills({ personal, experiences, skills, educat
           </div>
         </div>
 
-        {/* Perfectly Balanced 2-Column Grid (Zero Empty Space) */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
+        {/* Row 1: Balanced 2-Column Grid (Experience & Education vs Skills & Toolset) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start mb-8">
           
-          {/* Left Column: Experience, Education & Philosophy */}
+          {/* Left Column: Experience + Education */}
           <div className="space-y-8">
             
             {/* 1. Professional Experience */}
@@ -144,20 +144,9 @@ export default function ExperienceSkills({ personal, experiences, skills, educat
               </div>
             </div>
 
-            {/* 3. Design Philosophy */}
-            <div id="about" className="p-6 rounded-2xl bg-gradient-to-br from-neutral-900/90 to-neutral-950 border border-neutral-800/90">
-              <h4 className="text-base font-bold text-white mb-2 flex items-center gap-2">
-                <BookOpen className="w-4 h-4 text-amber-400" />
-                <span>About My Design Philosophy</span>
-              </h4>
-              <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
-                {personal.about}
-              </p>
-            </div>
-
           </div>
 
-          {/* Right Column: Skills Matrix & Client Work Guarantees */}
+          {/* Right Column: Skills Matrix */}
           <div id="skills" className="space-y-6">
             <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-6">
               <Sparkles className="w-5 h-5 text-amber-400" />
@@ -193,35 +182,60 @@ export default function ExperienceSkills({ personal, experiences, skills, educat
               ))}
             </div>
 
-            {/* Client Work Guarantees & Values Card */}
-            <div className="p-6 rounded-2xl bg-gradient-to-br from-neutral-900 via-neutral-900/80 to-neutral-950 border border-neutral-800">
-              <h4 className="text-base font-bold text-white mb-4 flex items-center gap-2">
+          </div>
+
+        </div>
+
+        {/* Row 2: Side-by-Side Design Philosophy & Work Guarantees (100% Symmetrical, Zero Empty Space) */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch">
+          
+          {/* Left Card: Design Philosophy */}
+          <div id="about" className="p-6 sm:p-7 rounded-2xl bg-gradient-to-br from-neutral-900/90 to-neutral-950 border border-neutral-800/90 flex flex-col justify-between">
+            <div>
+              <h4 className="text-base sm:text-lg font-bold text-white mb-3 flex items-center gap-2">
+                <BookOpen className="w-4 h-4 text-amber-400" />
+                <span>About My Design Philosophy</span>
+              </h4>
+              <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
+                {personal.about}
+              </p>
+            </div>
+            <div className="mt-6 pt-4 border-t border-neutral-800 flex items-center gap-2 text-xs text-neutral-400 font-mono">
+              <span className="w-2 h-2 rounded-full bg-amber-400" />
+              <span>Communication & Multimedia Journalism Graduate Background</span>
+            </div>
+          </div>
+
+          {/* Right Card: Client Work Guarantees */}
+          <div className="p-6 sm:p-7 rounded-2xl bg-gradient-to-br from-neutral-900 via-neutral-900/80 to-neutral-950 border border-neutral-800 flex flex-col justify-between">
+            <div>
+              <h4 className="text-base sm:text-lg font-bold text-white mb-4 flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 <span>Client Guarantees & Workflow Values</span>
               </h4>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-                <div className="p-3 rounded-xl bg-neutral-950/80 border border-neutral-800/80">
+                <div className="p-3.5 rounded-xl bg-neutral-950/80 border border-neutral-800/80">
                   <div className="flex items-center gap-2 text-amber-400 font-bold text-xs mb-1">
                     <Clock className="w-3.5 h-3.5" />
                     <span>Fast Turnaround</span>
                   </div>
                   <p className="text-[11px] text-neutral-400 leading-snug">
-                    Standard graphics delivered within 24-48 hours with rapid revisions.
+                    Standard graphics delivered within 24-48 hours with rapid revision cycles.
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-neutral-950/80 border border-neutral-800/80">
+                <div className="p-3.5 rounded-xl bg-neutral-950/80 border border-neutral-800/80">
                   <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs mb-1">
                     <Zap className="w-3.5 h-3.5" />
                     <span>Conversion First</span>
                   </div>
                   <p className="text-[11px] text-neutral-400 leading-snug">
-                    High-CTR thumbnail framing & commercial ads optimized for engagement.
+                    High-CTR thumbnail framing & commercial ads engineered for engagement.
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-neutral-950/80 border border-neutral-800/80">
+                <div className="p-3.5 rounded-xl bg-neutral-950/80 border border-neutral-800/80">
                   <div className="flex items-center gap-2 text-blue-400 font-bold text-xs mb-1">
                     <Check className="w-3.5 h-3.5" />
                     <span>Full Source Files</span>
@@ -231,7 +245,7 @@ export default function ExperienceSkills({ personal, experiences, skills, educat
                   </p>
                 </div>
 
-                <div className="p-3 rounded-xl bg-neutral-950/80 border border-neutral-800/80">
+                <div className="p-3.5 rounded-xl bg-neutral-950/80 border border-neutral-800/80">
                   <div className="flex items-center gap-2 text-rose-400 font-bold text-xs mb-1">
                     <Sparkles className="w-3.5 h-3.5" />
                     <span>Async Responsive</span>
@@ -243,6 +257,10 @@ export default function ExperienceSkills({ personal, experiences, skills, educat
               </div>
             </div>
 
+            <div className="mt-6 pt-4 border-t border-neutral-800 flex items-center gap-2 text-xs text-neutral-400 font-mono">
+              <span className="w-2 h-2 rounded-full bg-emerald-400" />
+              <span>Available for Remote Projects & Global Contracts</span>
+            </div>
           </div>
 
         </div>
