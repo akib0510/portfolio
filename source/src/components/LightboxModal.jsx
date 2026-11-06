@@ -3,19 +3,22 @@ import { X, ChevronLeft, ChevronRight, ExternalLink, Calendar, User, Wrench, Inf
 
 export default function LightboxModal({ project, projects, onClose, onNavigate }) {
   useEffect(() => {
+    if (!project) return;
+
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
       if (e.key === 'ArrowLeft') onNavigate('prev');
       if (e.key === 'ArrowRight') onNavigate('next');
     };
+
     window.addEventListener('keydown', handleKeyDown);
     document.body.style.overflow = 'hidden';
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = '';
     };
-  }, [onClose, onNavigate]);
+  }, [project, onClose, onNavigate]);
 
   if (!project) return null;
 
@@ -23,7 +26,7 @@ export default function LightboxModal({ project, projects, onClose, onNavigate }
   const total = projects.length;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 bg-black/90 backdrop-blur-xl animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 md:p-6 bg-black/95 backdrop-blur-xl animate-in fade-in duration-200">
       {/* Background click to close */}
       <div className="absolute inset-0" onClick={onClose} />
 
@@ -67,20 +70,20 @@ export default function LightboxModal({ project, projects, onClose, onNavigate }
 
       {/* Modal Dialog Content Container */}
       <div
-        className="relative z-10 w-full max-w-5xl max-h-[92vh] bg-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-2xl"
+        className="relative z-10 w-full max-w-6xl max-h-[92vh] bg-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Artwork Image Viewport */}
-        <div className="flex-1 bg-black/60 flex items-center justify-center p-4 sm:p-6 md:p-8 overflow-auto max-h-[55vh] md:max-h-[85vh]">
+        {/* Artwork Image Viewport - Full view without cropping */}
+        <div className="flex-1 bg-black/90 flex items-center justify-center p-3 sm:p-5 md:p-6 overflow-auto max-h-[60vh] md:max-h-[85vh]">
           <img
             src={project.image}
             alt={project.title}
-            className="max-w-full max-h-[50vh] md:max-h-[80vh] object-contain rounded-lg shadow-2xl"
+            className="max-w-full max-h-[55vh] md:max-h-[80vh] w-auto h-auto object-contain rounded-lg shadow-2xl"
           />
         </div>
 
         {/* Project Case Details Drawer */}
-        <div className="w-full md:w-80 lg:w-96 bg-neutral-900/90 border-t md:border-t-0 md:border-l border-neutral-800 p-5 sm:p-6 flex flex-col justify-between overflow-y-auto">
+        <div className="w-full md:w-80 lg:w-96 bg-neutral-900/95 border-t md:border-t-0 md:border-l border-neutral-800 p-5 sm:p-6 flex flex-col justify-between overflow-y-auto">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <span className="px-2.5 py-0.5 rounded text-[11px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/20">
@@ -116,22 +119,24 @@ export default function LightboxModal({ project, projects, onClose, onNavigate }
               </p>
             </div>
 
-            <div className="mt-4">
-              <h4 className="text-xs font-semibold uppercase text-neutral-400 tracking-wider mb-2 flex items-center gap-1.5">
-                <Wrench className="w-3.5 h-3.5 text-amber-400" />
-                Software & Disciplines
-              </h4>
-              <div className="flex flex-wrap gap-1.5">
-                {project.tools.map((tool, idx) => (
-                  <span
-                    key={idx}
-                    className="text-[11px] px-2 py-0.5 rounded bg-neutral-800 text-neutral-300 border border-neutral-700"
-                  >
-                    {tool}
-                  </span>
-                ))}
+            {project.tools && project.tools.length > 0 && (
+              <div className="mt-4">
+                <h4 className="text-xs font-semibold uppercase text-neutral-400 tracking-wider mb-2 flex items-center gap-1.5">
+                  <Wrench className="w-3.5 h-3.5 text-amber-400" />
+                  Software & Disciplines
+                </h4>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.tools.map((tool, idx) => (
+                    <span
+                      key={idx}
+                      className="text-[11px] px-2 py-0.5 rounded bg-neutral-800 text-neutral-300 border border-neutral-700"
+                    >
+                      {tool}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
 
           <div className="pt-6 mt-6 border-t border-neutral-800 flex items-center gap-3">
