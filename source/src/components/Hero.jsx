@@ -103,18 +103,24 @@ export default function Hero({ personal, onOpenCV }) {
             <div className="absolute inset-0 bg-gradient-to-tr from-red-600/35 via-orange-500/20 to-amber-500/15 rounded-3xl blur-3xl transform scale-95 opacity-80 pointer-events-none" />
 
             {/* Showcase Card Frame */}
-            <div className="relative z-10 w-full max-w-xl bg-neutral-900/95 rounded-3xl border border-neutral-700/80 shadow-2xl overflow-hidden group hover:border-red-500/70 transition-all duration-500">
+            <div 
+              className="relative z-10 w-full max-w-xl bg-neutral-900/95 rounded-3xl border border-neutral-700/80 shadow-2xl overflow-hidden group hover:border-orange-500/70 transition-all duration-300 [isolation:isolate] [transform:translateZ(0)]"
+              style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
+            >
               
-              {/* Image Container - Zoomed & Edge-to-Edge Flush */}
-              <div className="relative w-full aspect-[16/9] overflow-hidden bg-neutral-950">
+              {/* Image Container - Locked with rounded top */}
+              <div 
+                className="relative w-full aspect-[16/9] overflow-hidden bg-neutral-950 rounded-t-3xl [isolation:isolate] [transform:translateZ(0)]"
+                style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
+              >
                 <img
                   src="portfolio/akib_creator_specialist.jpg"
                   alt="Akib Hossian Dipu — Creator Growth Specialist"
-                  className="w-full h-full object-cover object-center scale-[1.03] group-hover:scale-108 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center rounded-t-3xl transition-all duration-500 group-hover:brightness-105"
                 />
 
                 {/* Subtle bottom gradient vignette */}
-                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-transparent pointer-events-none rounded-t-3xl" />
 
                 {/* Floating Highlights over Image */}
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between pointer-events-none">

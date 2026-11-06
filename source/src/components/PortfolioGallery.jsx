@@ -1,26 +1,36 @@
 import React, { useState } from 'react';
 import { Eye, Layers, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
 
-const INITIAL_LIMIT = 6;
+const BATCH_SIZE = 6;
 
 export default function PortfolioGallery({ projects, categories, onSelectProject }) {
   const [activeCategory, setActiveCategory] = useState('all');
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(BATCH_SIZE);
 
   const filteredProjects =
     activeCategory === 'all'
       ? projects
       : projects.filter((p) => p.category === activeCategory);
 
-  const hasMore = filteredProjects.length > INITIAL_LIMIT;
-  const displayedProjects = isExpanded
-    ? filteredProjects
-    : filteredProjects.slice(0, INITIAL_LIMIT);
-  const remainingCount = filteredProjects.length - displayedProjects.length;
+  const displayedProjects = filteredProjects.slice(0, visibleCount);
+  const remainingCount = Math.max(0, filteredProjects.length - visibleCount);
+  const nextBatchCount = Math.min(BATCH_SIZE, remainingCount);
+  const hasMore = remainingCount > 0;
+  const isExpanded = visibleCount > BATCH_SIZE;
 
   const handleCategorySelect = (catId) => {
     setActiveCategory(catId);
-    setIsExpanded(false);
+    setVisibleCount(BATCH_SIZE);
+  };
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => Math.min(prev + BATCH_SIZE, filteredProjects.length));
+  };
+
+  const handleCollapse = () => {
+    setVisibleCount(BATCH_SIZE);
+    const el = document.getElementById('projects');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -126,48 +136,41 @@ export default function PortfolioGallery({ projects, categories, onSelectProject
           ))}
         </div>
 
-        {/* Show More / Show Less Toggle Bar */}
-        {hasMore && !isExpanded && (
-          <div className="mt-10 sm:mt-12 flex flex-col items-center justify-center gap-3">
-            <button
-              type="button"
-              onClick={() => setIsExpanded(true)}
-              className="group inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 hover:from-red-600 hover:via-orange-600 hover:to-amber-600 text-white font-extrabold text-sm sm:text-base shadow-xl shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] transform transition-all duration-200 cursor-pointer"
-            >
-              <Sparkles className="w-5 h-5 text-amber-200 animate-pulse" />
-              <span>Show More Works ({filteredProjects.length} Designs Total)</span>
-              <span className="px-2.5 py-0.5 rounded-full bg-neutral-950/30 text-white text-xs font-mono font-bold">
-                +{remainingCount} more
-              </span>
-              <ChevronDown className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
-            </button>
+        {/* Step-by-Step Load More Actions */}
+        <div className="mt-12 flex flex-col items-center justify-center gap-3">
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {hasMore && (
+              <button
+                type="button"
+                onClick={handleLoadMore}
+                className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-2xl bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 hover:from-red-600 hover:via-orange-600 hover:to-amber-600 text-white font-extrabold text-sm shadow-xl shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] transform transition-all duration-200 cursor-pointer"
+              >
+                <Sparkles className="w-4 h-4 text-amber-200 animate-pulse" />
+                <span>Show More Works (+{nextBatchCount} Designs)</span>
+                <ChevronDown className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
+              </button>
+            )}
 
-            <p className="text-xs text-neutral-400 font-mono">
-              Showing top 6 featured designs • Click above to explore all {filteredProjects.length} works
-            </p>
+            {isExpanded && (
+              <button
+                type="button"
+                onClick={handleCollapse}
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl border border-neutral-700 bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 hover:text-white text-xs font-bold transition-all cursor-pointer shadow-lg hover:border-amber-500/50"
+              >
+                <ChevronUp className="w-4 h-4 text-amber-400" />
+                <span>Collapse (Reset to 6)</span>
+              </button>
+            )}
           </div>
-        )}
 
-        {hasMore && isExpanded && (
-          <div className="mt-12 flex flex-col items-center justify-center gap-3">
-            <button
-              type="button"
-              onClick={() => {
-                setIsExpanded(false);
-                const el = document.getElementById('projects');
-                if (el) el.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-neutral-700 bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 hover:text-white text-xs font-bold transition-all cursor-pointer shadow-lg hover:border-amber-500/50"
-            >
-              <ChevronUp className="w-4 h-4 text-amber-400" />
-              <span>Show Fewer Works (Collapse to Top 6)</span>
-            </button>
-
-            <p className="text-xs text-neutral-500 font-mono">
-              All {filteredProjects.length} designs currently displayed
-            </p>
-          </div>
-        )}
+          <p className="text-xs text-neutral-400 font-mono">
+            {hasMore ? (
+              <span>Showing {displayedProjects.length} of {filteredProjects.length} designs • Click above to load {nextBatchCount} more</span>
+            ) : (
+              <span>All {filteredProjects.length} designs loaded</span>
+            )}
+          </p>
+        </div>
       </div>
     </section>
   );
