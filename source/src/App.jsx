@@ -54,6 +54,7 @@ export default function App() {
           personal={portfolioData.personal}
           experiences={portfolioData.experiences}
           skills={portfolioData.skills}
+          onOpenCV={() => setIsCVOpen(true)}
         />
 
         <ContactSection personal={portfolioData.personal} />

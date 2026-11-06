@@ -1,1074 +1,1074 @@
-﻿[
-    {
-        "id":  "sycoach-series-main",
-        "title":  "YouTube Thumbnail Design Series",
-        "category":  "thumbnails",
-        "tag":  "Featured Series",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/root_series.jpg",
-        "aspect":  "landscape",
-        "description":  "Curated psychology thumbnail series created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Color Grading"
-                  ],
-        "priority":  1
-    },
-    {
-        "id":  "commercial-8",
-        "title":  "Pacco Courier Pickup \u0026 Home Delivery",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_8.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  2
-    },
-    {
-        "id":  "commercial-11",
-        "title":  "Pacco Chowgacha Regional Launch Poster",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_11.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  3
-    },
-    {
-        "id":  "thumbnails-9",
-        "title":  "Depression \u0026 Age Barriers Video Cover",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_9.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  4
-    },
-    {
-        "id":  "commercial-9",
-        "title":  "Pacco Daily \u0026 Monthly Tiffin Delivery",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_9.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  5
-    },
-    {
-        "id":  "commercial-10",
-        "title":  "Pacco Fresh Homemade Food Delivery",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_10.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  6
-    },
-    {
-        "id":  "commercial-4",
-        "title":  "Pacco Launch Countdown - 2 Days Left",
-        "category":  "commercial",
-        "tag":  "Launch Campaign Banner",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_4.jpg",
-        "aspect":  "landscape",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  7
-    },
-    {
-        "id":  "thumbnails-1",
-        "title":  "Procrastination Psychology Video Cover",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_1.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  8
-    },
-    {
-        "id":  "thumbnails-2",
-        "title":  "Mental Wellness Solution Video Cover",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_2.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  9
-    },
-    {
-        "id":  "thumbnails-8",
-        "title":  "Trauma Case Studies Video Cover",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_8.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  10
-    },
-    {
-        "id":  "commercial-12",
-        "title":  "Pacco Shopping \u0026 Mall Service Poster",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_12.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  11
-    },
-    {
-        "id":  "commercial-17",
-        "title":  "Pacco Logistics \u0026 Hotline Service Banner",
-        "category":  "commercial",
-        "tag":  "Brand Campaign Banner",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_17.jpg",
-        "aspect":  "landscape",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  12
-    },
-    {
-        "id":  "social-2",
-        "title":  "Mental Health Clinician Profile - Afnan Tahmim",
-        "category":  "social",
-        "tag":  "Social Media Card",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_2.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  13
-    },
-    {
-        "id":  "social-1",
-        "title":  "Psychologist Profile Card - Abdullah Jiyad",
-        "category":  "social",
-        "tag":  "Social Media Card",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_1.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  14
-    },
-    {
-        "id":  "reels-1",
-        "title":  "Viral Short-Form Creator Reel Thumbnail",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_1.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  15
-    },
-    {
-        "id":  "social-11",
-        "title":  "Social Media Post #11",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_11.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-10",
-        "title":  "tasnim rahman",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_10.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-9",
-        "title":  "tapositeresatithi",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_9.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-18",
-        "title":  "Social Media Post #18",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_18.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-13",
-        "title":  "Social Media Post #13",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_13.jpg",
-        "aspect":  "portrait",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-12",
-        "title":  "Social Media Post #12",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_12.jpg",
-        "aspect":  "portrait",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-5",
-        "title":  "farah tabassum sammi",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_5.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-4",
-        "title":  "coyonkumar",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_4.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-3",
-        "title":  "afnantahmim",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_3.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-8",
-        "title":  "tahminasarkar",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_8.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-7",
-        "title":  "moslema",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_7.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-6",
-        "title":  "ffffffffffffffffffffffffffffffemp-1",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_6.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-23",
-        "title":  "Social Media Post #23",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_23.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-24",
-        "title":  "Social Media Post #24",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_24.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-25",
-        "title":  "Social Media Post #25",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_25.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-19",
-        "title":  "Social Media Post #19",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_19.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-22",
-        "title":  "Social Media Post #22",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_22.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-21",
-        "title":  "Social Media Post #21",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_21.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-20",
-        "title":  "Social Media Post #20",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_20.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-14",
-        "title":  "Social Media Post #14",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_14.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-27",
-        "title":  "Social Media Post #27",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_27.jpg",
-        "aspect":  "portrait",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-28",
-        "title":  "Social Media Post #28",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_28.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-15",
-        "title":  "Social Media Post #15",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_15.jpg",
-        "aspect":  "portrait",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-26",
-        "title":  "Social Media Post #26",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_26.jpg",
-        "aspect":  "portrait",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-17",
-        "title":  "Social Media Post #17",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_17.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "social-16",
-        "title":  "Social Media Post #16",
-        "category":  "social",
-        "tag":  "Social Media Post",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/social_16.jpg",
-        "aspect":  "landscape",
-        "description":  "Social Media Post design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-16",
-        "title":  "Untaaadadadaitled-1",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_16.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-15",
-        "title":  "s4",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_15.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-14",
-        "title":  "s4-Recovered",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_14.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "thumbnails-5",
-        "title":  "YouTube Thumbnail #5",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_5.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "thumbnails-4",
-        "title":  "YouTube Thumbnail #4",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_4.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "thumbnails-3",
-        "title":  "YouTube Thumbnail #3",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_3.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-13",
-        "title":  "new-Recovssssssssssssssered",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_13.jpg",
-        "aspect":  "landscape",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-3",
-        "title":  "Commercial Poster #3",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_3.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-2",
-        "title":  "555\u0027d",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_2.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-1",
-        "title":  "Commercial Poster #1",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_1.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-7",
-        "title":  "Commercial Poster #7",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_7.jpg",
-        "aspect":  "portrait",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-6",
-        "title":  "Commercial Poster #6",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_6.jpg",
-        "aspect":  "landscape",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "commercial-5",
-        "title":  "Commercial Poster #5",
-        "category":  "commercial",
-        "tag":  "Commercial Poster",
-        "client":  "Pacco Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/commercial_5.jpg",
-        "aspect":  "landscape",
-        "description":  "Commercial Poster design created for Pacco Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-9",
-        "title":  "Reels / Shorts #9",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_9.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-8",
-        "title":  "Reels / Shorts #8",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_8.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-7",
-        "title":  "Reels / Shorts #7",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_7.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-12",
-        "title":  "Untitlffedfffffffffffffffffffffff-1",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_12.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-11",
-        "title":  "Untitleffffd-1",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_11.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-10",
-        "title":  "Reels / Shorts #10",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_10.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-6",
-        "title":  "Reels / Shorts #6",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_6.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-2",
-        "title":  "eee",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_2.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "thumbnails-7",
-        "title":  "YouTube Thumbnail #7",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_7.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "thumbnails-6",
-        "title":  "YouTube Thumbnail #6",
-        "category":  "thumbnails",
-        "tag":  "YouTube Thumbnail",
-        "client":  "PsyCoach Bangladesh",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/thumbnails_6.jpg",
-        "aspect":  "landscape",
-        "description":  "YouTube Thumbnail design created for PsyCoach Bangladesh.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-5",
-        "title":  "Reels / Shorts #5",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_5.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-4",
-        "title":  "Untitleaaasssssssssssssssssssaaa...",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_4.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    },
-    {
-        "id":  "reels-3",
-        "title":  "Untitleaaaaaaaaaaaaaaaaaaaaad-1",
-        "category":  "reels",
-        "tag":  "Reels / Shorts",
-        "client":  "Creator Series",
-        "year":  "2024 - 2026",
-        "image":  "portfolio/reels_3.jpg",
-        "aspect":  "portrait",
-        "description":  "Reels / Shorts design created for Creator Series.",
-        "tools":  [
-                      "Photoshop",
-                      "Illustrator"
-                  ],
-        "priority":  999
-    }
+[
+  {
+    "id": "commercial-11",
+    "title": "Pacco Chowgacha Regional Launch Poster",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_11.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 1
+  },
+  {
+    "id": "commercial-4",
+    "title": "Pacco Launch Countdown - 2 Days Left",
+    "category": "commercial",
+    "tag": "Launch Campaign Banner",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_4.jpg",
+    "aspect": "landscape",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 2
+  },
+  {
+    "id": "sycoach-series-main",
+    "title": "YouTube Thumbnail Design Series",
+    "category": "thumbnails",
+    "tag": "Featured Series",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/root_series.jpg",
+    "aspect": "landscape",
+    "description": "Curated psychology thumbnail series created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Color Grading"
+    ],
+    "priority": 3
+  },
+  {
+    "id": "thumbnails-9",
+    "title": "Depression & Age Barriers Video Cover",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_9.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 4
+  },
+  {
+    "id": "commercial-8",
+    "title": "Pacco Courier Pickup & Home Delivery",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_8.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 5
+  },
+  {
+    "id": "commercial-10",
+    "title": "Pacco Fresh Homemade Food Delivery",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_10.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 6
+  },
+  {
+    "id": "commercial-9",
+    "title": "Pacco Daily & Monthly Tiffin Delivery",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_9.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 7
+  },
+  {
+    "id": "thumbnails-1",
+    "title": "Procrastination Psychology Video Cover",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_1.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 8
+  },
+  {
+    "id": "thumbnails-2",
+    "title": "Mental Wellness Solution Video Cover",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_2.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 9
+  },
+  {
+    "id": "thumbnails-8",
+    "title": "Trauma Case Studies Video Cover",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_8.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 10
+  },
+  {
+    "id": "commercial-12",
+    "title": "Pacco Shopping & Mall Service Poster",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_12.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 11
+  },
+  {
+    "id": "commercial-17",
+    "title": "Pacco Logistics & Hotline Service Banner",
+    "category": "commercial",
+    "tag": "Brand Campaign Banner",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_17.jpg",
+    "aspect": "landscape",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 12
+  },
+  {
+    "id": "social-2",
+    "title": "Mental Health Clinician Profile - Afnan Tahmim",
+    "category": "social",
+    "tag": "Social Media Card",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_2.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 13
+  },
+  {
+    "id": "social-1",
+    "title": "Psychologist Profile Card - Abdullah Jiyad",
+    "category": "social",
+    "tag": "Social Media Card",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_1.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 14
+  },
+  {
+    "id": "reels-1",
+    "title": "Viral Short-Form Creator Reel Thumbnail",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_1.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 15
+  },
+  {
+    "id": "social-11",
+    "title": "Social Media Post #11",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_11.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-10",
+    "title": "tasnim rahman",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_10.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-9",
+    "title": "tapositeresatithi",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_9.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-18",
+    "title": "Social Media Post #18",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_18.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-13",
+    "title": "Social Media Post #13",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_13.jpg",
+    "aspect": "portrait",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-12",
+    "title": "Social Media Post #12",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_12.jpg",
+    "aspect": "portrait",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-5",
+    "title": "farah tabassum sammi",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_5.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-4",
+    "title": "coyonkumar",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_4.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-3",
+    "title": "afnantahmim",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_3.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-8",
+    "title": "tahminasarkar",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_8.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-7",
+    "title": "moslema",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_7.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-6",
+    "title": "ffffffffffffffffffffffffffffffemp-1",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_6.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-23",
+    "title": "Social Media Post #23",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_23.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-24",
+    "title": "Social Media Post #24",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_24.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-25",
+    "title": "Social Media Post #25",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_25.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-19",
+    "title": "Social Media Post #19",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_19.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-22",
+    "title": "Social Media Post #22",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_22.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-21",
+    "title": "Social Media Post #21",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_21.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-20",
+    "title": "Social Media Post #20",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_20.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-14",
+    "title": "Social Media Post #14",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_14.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-27",
+    "title": "Social Media Post #27",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_27.jpg",
+    "aspect": "portrait",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-28",
+    "title": "Social Media Post #28",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_28.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-15",
+    "title": "Social Media Post #15",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_15.jpg",
+    "aspect": "portrait",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-26",
+    "title": "Social Media Post #26",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_26.jpg",
+    "aspect": "portrait",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-17",
+    "title": "Social Media Post #17",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_17.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "social-16",
+    "title": "Social Media Post #16",
+    "category": "social",
+    "tag": "Social Media Post",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/social_16.jpg",
+    "aspect": "landscape",
+    "description": "Social Media Post design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-16",
+    "title": "Untaaadadadaitled-1",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_16.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-15",
+    "title": "s4",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_15.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-14",
+    "title": "s4-Recovered",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_14.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "thumbnails-5",
+    "title": "YouTube Thumbnail #5",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_5.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "thumbnails-4",
+    "title": "YouTube Thumbnail #4",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_4.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "thumbnails-3",
+    "title": "YouTube Thumbnail #3",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_3.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-13",
+    "title": "new-Recovssssssssssssssered",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_13.jpg",
+    "aspect": "landscape",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-3",
+    "title": "Commercial Poster #3",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_3.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-2",
+    "title": "555'd",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_2.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-1",
+    "title": "Commercial Poster #1",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_1.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-7",
+    "title": "Commercial Poster #7",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_7.jpg",
+    "aspect": "portrait",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-6",
+    "title": "Commercial Poster #6",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_6.jpg",
+    "aspect": "landscape",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "commercial-5",
+    "title": "Commercial Poster #5",
+    "category": "commercial",
+    "tag": "Commercial Poster",
+    "client": "Pacco Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/commercial_5.jpg",
+    "aspect": "landscape",
+    "description": "Commercial Poster design created for Pacco Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-9",
+    "title": "Reels / Shorts #9",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_9.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-8",
+    "title": "Reels / Shorts #8",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_8.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-7",
+    "title": "Reels / Shorts #7",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_7.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-12",
+    "title": "Untitlffedfffffffffffffffffffffff-1",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_12.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-11",
+    "title": "Untitleffffd-1",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_11.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-10",
+    "title": "Reels / Shorts #10",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_10.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-6",
+    "title": "Reels / Shorts #6",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_6.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-2",
+    "title": "eee",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_2.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "thumbnails-7",
+    "title": "YouTube Thumbnail #7",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_7.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "thumbnails-6",
+    "title": "YouTube Thumbnail #6",
+    "category": "thumbnails",
+    "tag": "YouTube Thumbnail",
+    "client": "PsyCoach Bangladesh",
+    "year": "2024 - 2026",
+    "image": "portfolio/thumbnails_6.jpg",
+    "aspect": "landscape",
+    "description": "YouTube Thumbnail design created for PsyCoach Bangladesh.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-5",
+    "title": "Reels / Shorts #5",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_5.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-4",
+    "title": "Untitleaaasssssssssssssssssssaaa...",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_4.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  },
+  {
+    "id": "reels-3",
+    "title": "Untitleaaaaaaaaaaaaaaaaaaaaad-1",
+    "category": "reels",
+    "tag": "Reels / Shorts",
+    "client": "Creator Series",
+    "year": "2024 - 2026",
+    "image": "portfolio/reels_3.jpg",
+    "aspect": "portrait",
+    "description": "Reels / Shorts design created for Creator Series.",
+    "tools": [
+      "Photoshop",
+      "Illustrator"
+    ],
+    "priority": 999
+  }
 ]

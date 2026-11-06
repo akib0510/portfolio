@@ -1,24 +1,69 @@
 import React from 'react';
-import { Briefcase, Code, CheckCircle, Award, Sparkles, BookOpen } from 'lucide-react';
+import { Briefcase, CheckCircle, Award, Sparkles, BookOpen, FileText, Download, Eye, ExternalLink } from 'lucide-react';
 
-export default function ExperienceSkills({ personal, experiences, skills }) {
+export default function ExperienceSkills({ personal, experiences, skills, onOpenCV }) {
   return (
-    <section id="experience" className="py-24 border-t border-neutral-900 relative">
+    <section id="experience" className="py-20 sm:py-24 border-t border-neutral-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
-        <div className="max-w-2xl mb-16">
+        <div className="max-w-2xl mb-12">
           <div className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-amber-400 mb-2 font-mono">
             <Briefcase className="w-4 h-4" />
-            <span>Career & Capabilities</span>
+            <span>Career & Qualifications</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Work Experience & Design Skills
+            Work Experience & Credentials
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base mt-2">
-            A track record of high-performance visual design for digital agencies, consumer brands, and creator platforms.
+            A proven track record of high-performance visual design for digital agencies, consumer brands, and creator platforms.
           </p>
         </div>
 
+        {/* Dedicated Curriculum Vitae & Resume Showcase Card (Instant Access) */}
+        <div className="mb-14 p-6 sm:p-7 rounded-3xl bg-gradient-to-r from-neutral-900 via-neutral-900/90 to-neutral-950 border border-neutral-800 shadow-2xl flex flex-col md:flex-row md:items-center justify-between gap-6 relative overflow-hidden group hover:border-amber-500/40 transition-all duration-300">
+          <div className="absolute top-0 right-0 w-80 h-full bg-gradient-to-l from-amber-500/5 to-transparent pointer-events-none" />
+
+          <div className="flex items-start sm:items-center gap-4 relative z-10">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-amber-500/20 via-orange-500/20 to-red-500/20 border border-amber-500/30 flex items-center justify-center shrink-0 shadow-lg">
+              <FileText className="w-6 h-6 text-amber-400" />
+            </div>
+            <div>
+              <div className="flex flex-wrap items-center gap-2.5">
+                <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
+                  Official Curriculum Vitae (CV)
+                </h3>
+                <span className="px-2.5 py-0.5 rounded-full text-[10px] font-mono font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                  Ready to Review
+                </span>
+              </div>
+              <p className="text-xs sm:text-sm text-neutral-300 mt-1 max-w-xl leading-relaxed">
+                Review verified experience at <strong className="text-white">Pacco Bangladesh</strong> & <strong className="text-white">PyCoach Bangladesh</strong>, design tool proficiencies, education, and credentials.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex flex-wrap items-center gap-3 relative z-10 shrink-0">
+            <button
+              onClick={onOpenCV}
+              className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-neutral-950 font-bold text-xs sm:text-sm shadow-lg shadow-orange-500/20 hover:scale-[1.02] transform transition-all cursor-pointer"
+            >
+              <Eye className="w-4 h-4 text-neutral-950" />
+              <span>View Online CV</span>
+            </button>
+
+            <a
+              href={personal.cvPdfUrl}
+              download
+              className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-neutral-700 bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 hover:text-white font-semibold text-xs sm:text-sm transition-colors"
+            >
+              <Download className="w-4 h-4 text-amber-400" />
+              <span>Download PDF</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Experience Timeline & Skills Matrix Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           {/* Left: Experience Timeline (7 cols) */}
           <div className="lg:col-span-7 space-y-8">
@@ -60,7 +105,7 @@ export default function ExperienceSkills({ personal, experiences, skills }) {
           <div id="skills" className="lg:col-span-5 space-y-6">
             <h3 className="text-xl font-bold text-white flex items-center gap-2 mb-6">
               <Sparkles className="w-5 h-5 text-amber-400" />
-              <span>Skills & Expertise</span>
+              <span>Skills & Tools Matrix</span>
             </h3>
 
             <div className="space-y-4">
