@@ -1,20 +1,24 @@
-# Akib Hossian Dipu — Graphic Designer Portfolio
+# Akib Hossian Dipu — Graphic Designer & Visual Content Specialist Portfolio
 
-A creative, black & red portfolio built to land a **remote graphic design job**.
+Official live portfolio: [https://akib0510.github.io/portfolio/](https://akib0510.github.io/portfolio/)
 
-## Edit your site (no code)
+---
 
-1. `python server.py` (from this folder)
-2. Open http://localhost:8000/editor.html
-3. Edit copy, work items, colors → **Save & Rebuild** → refresh the site tab
+## 🎨 Featured Work & Specializations
+- **Commercial Advertising & Posters:** Pacco courier pickup, tiffin service, food delivery campaigns.
+- **High-CTR YouTube Thumbnails:** Sycoach / PsyCoach Bangladesh psychological video series.
+- **Social Media Marketing:** Multi-platform clinician profile cards and promotional carousels.
+- **Short-form Vertical Media:** High-impact reels and shorts thumbnails.
 
-## Live
+---
 
-Live on GitHub Pages. Rebuild happens automatically when you push `main`.
+## 🛠️ Built With
+- **React + Vite**
+- **Tailwind CSS v4**
+- **Lucide Icons**
+- **Responsive Lightbox & Case Study Drawer**
+- **Interactive CV Viewer with Instant PDF Download**
 
-### Quick re-deploy after edits
-```bash
-git add -A
-git commit -m "update"
-git push origin main
-```
+---
+
+© 2026 Akib Hossian Dipu. All rights reserved.
