@@ -71,13 +71,16 @@ export default function Navbar({ onOpenCV, personal }) {
 
         {/* Action Buttons */}
         <div className="hidden sm:flex items-center gap-3">
-          <button
-            onClick={onOpenCV}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neutral-700 bg-neutral-900/60 hover:bg-neutral-800 text-xs font-semibold text-neutral-200 transition-all hover:border-neutral-500"
+          <a
+            href="./Akib_Hossian_Dipu_Graphic_Designer_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neutral-700 bg-neutral-900/60 hover:bg-neutral-800 text-xs font-semibold text-neutral-200 transition-all hover:border-neutral-500 cursor-pointer"
+            title="Open Official Curriculum Vitae"
           >
             <FileText className="w-3.5 h-3.5 text-amber-400" />
             <span>View CV</span>
-          </button>
+          </a>
 
           <a
             href="#contact"
@@ -131,16 +134,16 @@ export default function Navbar({ onOpenCV, personal }) {
             About
           </a>
           <div className="pt-2 flex flex-col gap-2">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenCV();
-              }}
+            <a
+              href="./Akib_Hossian_Dipu_Graphic_Designer_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
               className="w-full py-2.5 rounded-lg border border-neutral-700 bg-neutral-900 text-xs font-semibold text-neutral-200 flex items-center justify-center gap-2"
             >
               <FileText className="w-4 h-4 text-amber-400" />
-              View CV / Resume
-            </button>
+              View CV / Resume (PDF)
+            </a>
             <a
               href="#contact"
               onClick={() => setMobileMenuOpen(false)}

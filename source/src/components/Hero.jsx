@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Download, Sparkles, Send, Mail, ExternalLink, TrendingUp, MessageCircle, CheckCircle2 } from 'lucide-react';
+import { ArrowDown, Download, Sparkles, Send, Mail, ExternalLink, TrendingUp, MessageCircle, CheckCircle2, FileText } from 'lucide-react';
 import { LinkedinIcon } from './Icons';
 
 export default function Hero({ personal, onOpenCV }) {
@@ -56,13 +56,16 @@ export default function Hero({ personal, onOpenCV }) {
                 <span>WhatsApp</span>
               </a>
 
-              <button
-                onClick={onOpenCV}
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 text-neutral-200 hover:text-white font-semibold text-sm transition-all duration-200 hover:border-neutral-500"
+              <a
+                href="./Akib_Hossian_Dipu_Graphic_Designer_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 text-neutral-200 hover:text-white font-semibold text-sm transition-all duration-200 hover:border-neutral-500 cursor-pointer"
+                title="View Official Curriculum Vitae"
               >
-                <Download className="w-4 h-4 text-amber-400" />
+                <FileText className="w-4 h-4 text-amber-400" />
                 <span>Resume & CV</span>
-              </button>
+              </a>
 
               <a
                 href={personal.socials.linkedin}

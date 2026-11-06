@@ -22,7 +22,7 @@ export default function CVModal({ isOpen, onClose, personal, experiences, skills
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md opacity-100">
       {/* Backdrop */}
       <div className="absolute inset-0" onClick={onClose} />
 

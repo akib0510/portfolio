@@ -44,22 +44,34 @@ export default function ExperienceSkills({ personal, experiences, skills, educat
           </div>
 
           <div className="flex flex-wrap items-center gap-3 relative z-10 shrink-0">
-            <button
-              onClick={onOpenCV}
+            <a
+              href="./Akib_Hossian_Dipu_Graphic_Designer_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-neutral-950 font-bold text-xs sm:text-sm shadow-lg shadow-orange-500/20 hover:scale-[1.02] transform transition-all cursor-pointer"
             >
-              <Eye className="w-4 h-4 text-neutral-950" />
-              <span>View Online CV</span>
-            </button>
+              <FileText className="w-4 h-4 text-neutral-950" />
+              <span>View CV (PDF)</span>
+            </a>
 
             <a
-              href={personal.cvPdfUrl}
-              download
-              className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-neutral-700 bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 hover:text-white font-semibold text-xs sm:text-sm transition-colors"
+              href="./Akib_Hossian_Dipu_Graphic_Designer_CV.pdf"
+              download="Akib_Hossian_Dipu_Graphic_Designer_CV.pdf"
+              className="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-neutral-700 bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 hover:text-white font-semibold text-xs sm:text-sm transition-colors cursor-pointer"
             >
               <Download className="w-4 h-4 text-amber-400" />
               <span>Download PDF</span>
             </a>
+
+            <button
+              type="button"
+              onClick={onOpenCV}
+              className="inline-flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl border border-neutral-800 bg-neutral-950/60 hover:bg-neutral-900 text-neutral-300 hover:text-white text-xs font-semibold transition-colors cursor-pointer"
+              title="Open Interactive Resume Modal"
+            >
+              <Eye className="w-3.5 h-3.5 text-amber-400" />
+              <span>Online View</span>
+            </button>
           </div>
         </div>
 
