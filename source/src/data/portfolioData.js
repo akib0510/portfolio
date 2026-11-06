@@ -30,7 +30,7 @@ Skilled in translating abstract brand and marketing ideas into clean, scroll-sto
   skills: [
     {
       category: "Software & Creative Tools",
-      items: ["Adobe Photoshop", "Canva Pro", "Adobe Illustrator", "Premiere Pro", "CapCut Pro", "Figma Basics"],
+      items: ["Adobe Photoshop", "Canva Pro", "Adobe Illustrator", "Premiere Pro", "CapCut Pro"],
     },
     {
       category: "Design Disciplines",
@@ -45,8 +45,8 @@ Skilled in translating abstract brand and marketing ideas into clean, scroll-sto
       ],
     },
     {
-      category: "Remote Collaboration & Workflow",
-      items: ["Slack", "Notion", "Trello", "Google Workspace", "Async Communication", "Fast Turnarounds"],
+      category: "Remote Collaboration & Communication",
+      items: ["Discord", "WhatsApp", "Microsoft Teams", "Google Workspace", "Slack", "Notion", "Trello"],
     },
   ],
 
@@ -62,12 +62,6 @@ Skilled in translating abstract brand and marketing ideas into clean, scroll-sto
       role: "Lead Visual & Thumbnail Designer",
       company: "PsyCoach Bangladesh (Remote / Hybrid)",
       description: "Directing high-converting social media creatives, promotional posters, and ad banners. Engineered custom YouTube thumbnail concepts with dramatic lighting, bold typography, and emotive subject framing (+40% organic engagement).",
-    },
-    {
-      period: "2022 - 2023",
-      role: "Digital Media & Advocacy Designer",
-      company: "Community Initiatives & Independent Creators (Remote)",
-      description: "Created youth campaign posters, public health advocacy infographics, and community event collaterals with clean, purpose-driven visual layouts.",
     },
   ],
 
