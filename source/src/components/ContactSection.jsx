@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MapPin, Send, Copy, Check, MessageSquare, ExternalLink } from 'lucide-react';
+import { Mail, MapPin, Send, Copy, Check, MessageSquare, ExternalLink, MessageCircle } from 'lucide-react';
 import { LinkedinIcon } from './Icons';
 
 export default function ContactSection({ personal }) {
@@ -65,6 +65,27 @@ export default function ContactSection({ personal }) {
                   {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
                 </button>
               </div>
+
+              {/* WhatsApp Card */}
+              <a
+                href={personal.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-xl bg-neutral-900/60 border border-neutral-800 flex items-center justify-between group hover:border-emerald-500/40 transition-all"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    <MessageCircle className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="block text-[11px] font-mono text-neutral-400">Direct WhatsApp</span>
+                    <span className="text-sm font-semibold text-white group-hover:text-emerald-400 transition-colors">
+                      {personal.phone}
+                    </span>
+                  </div>
+                </div>
+                <ExternalLink className="w-4 h-4 text-neutral-500 group-hover:text-emerald-400 transition-colors" />
+              </a>
 
               {/* LinkedIn Card */}
               <a
