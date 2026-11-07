@@ -53,26 +53,26 @@ export default function PortfolioGallery({ projects, categories, onSelectProject
     else colTablet2.push(item);
   });
 
-  // Reusable card renderer
+  // Reusable card renderer with smooth elevation and hover animations
   const renderCard = (project) => (
     <div
       key={project.id}
       onClick={() => onSelectProject(project)}
-      className="w-full mb-6 group relative bg-neutral-900/80 rounded-2xl border border-neutral-800/80 overflow-hidden hover:border-neutral-600 hover:bg-neutral-900 transition-all duration-300 hover:shadow-2xl hover:shadow-amber-500/10 cursor-pointer"
+      className="w-full mb-6 group relative bg-neutral-900/80 rounded-2xl border border-neutral-800/80 overflow-hidden hover:border-neutral-500 hover:bg-neutral-900 transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-amber-500/10 cursor-pointer [isolation:isolate] [transform:translateZ(0)]"
     >
       {/* Image Container — w-full h-auto block to ensure 100% natural fit without letterboxing */}
-      <div className="relative w-full overflow-hidden bg-neutral-950">
+      <div className="relative w-full overflow-hidden bg-neutral-950 rounded-t-2xl">
         <img
           src={project.image}
           alt={project.title}
           loading="lazy"
           decoding="async"
-          className="w-full h-auto block group-hover:scale-[1.03] transition-transform duration-500"
+          className="w-full h-auto block group-hover:scale-[1.03] transition-transform duration-500 ease-out rounded-t-2xl"
         />
 
         {/* Inspect Overlay on hover */}
-        <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-950/90 text-white border border-neutral-700 text-xs font-semibold backdrop-blur-md shadow-2xl transform translate-y-1 group-hover:translate-y-0 transition-transform">
+        <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-[2px]">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-neutral-950/95 text-white border border-neutral-700 text-xs font-semibold backdrop-blur-md shadow-2xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
             <Eye className="w-3.5 h-3.5 text-amber-400" />
             Inspect Fullscreen
           </span>
@@ -87,7 +87,7 @@ export default function PortfolioGallery({ projects, categories, onSelectProject
       </div>
 
       {/* Information Drawer Below Image */}
-      <div className="p-4 bg-neutral-900/90 border-t border-neutral-800/80">
+      <div className="p-4 bg-neutral-900/90 border-t border-neutral-800/80 group-hover:border-neutral-700 transition-colors">
         <div className="flex items-center justify-between text-xs text-neutral-400 mb-1">
           <span className="font-semibold text-amber-400/90 truncate mr-2">
             {project.client}
@@ -120,7 +120,7 @@ export default function PortfolioGallery({ projects, categories, onSelectProject
             </p>
           </div>
 
-          {/* Category Filter Tabs */}
+          {/* Category Filter Tabs with smooth transitions */}
           <div className="flex flex-wrap items-center gap-2">
             {categories.map((cat) => {
               const count =
@@ -134,10 +134,10 @@ export default function PortfolioGallery({ projects, categories, onSelectProject
                 <button
                   key={cat.id}
                   onClick={() => handleCategorySelect(cat.id)}
-                  className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold transition-all duration-200 cursor-pointer ${
+                  className={`inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-semibold transition-all duration-300 cursor-pointer ${
                     isActive
-                      ? 'bg-amber-500 text-neutral-950 shadow-md shadow-amber-500/20'
-                      : 'bg-neutral-900 border border-neutral-800 text-neutral-300 hover:border-neutral-700 hover:text-white'
+                      ? 'bg-amber-500 text-neutral-950 shadow-md shadow-amber-500/20 scale-[1.02]'
+                      : 'bg-neutral-900 border border-neutral-800 text-neutral-300 hover:border-neutral-700 hover:text-white hover:-translate-y-0.5'
                   }`}
                 >
                   <span>{cat.label}</span>
@@ -179,7 +179,7 @@ export default function PortfolioGallery({ projects, categories, onSelectProject
               <button
                 type="button"
                 onClick={handleLoadMore}
-                className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-2xl bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 hover:from-red-600 hover:via-orange-600 hover:to-amber-600 text-white font-extrabold text-sm shadow-xl shadow-orange-500/25 hover:shadow-orange-500/40 hover:scale-[1.02] transform transition-all duration-200 cursor-pointer"
+                className="group inline-flex items-center gap-2.5 px-8 py-3.5 rounded-2xl bg-gradient-to-r from-red-500 via-orange-500 to-amber-500 hover:from-red-600 hover:via-orange-600 hover:to-amber-600 text-white font-extrabold text-sm shadow-xl shadow-orange-500/25 hover:shadow-orange-500/40 hover:-translate-y-0.5 transform transition-all duration-300 cursor-pointer"
               >
                 <Sparkles className="w-4 h-4 text-amber-200 animate-pulse" />
                 <span>Show More Works (+{nextBatchCount} Designs)</span>
@@ -191,7 +191,7 @@ export default function PortfolioGallery({ projects, categories, onSelectProject
               <button
                 type="button"
                 onClick={handleCollapse}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl border border-neutral-700 bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 hover:text-white text-xs font-bold transition-all cursor-pointer shadow-lg hover:border-amber-500/50"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl border border-neutral-700 bg-neutral-900/90 hover:bg-neutral-800 text-neutral-200 hover:text-white text-xs font-bold transition-all duration-300 cursor-pointer shadow-lg hover:border-amber-500/50 hover:-translate-y-0.5"
               >
                 <ChevronUp className="w-4 h-4 text-amber-400" />
                 <span>Collapse (Reset to 6)</span>

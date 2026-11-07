@@ -22,13 +22,13 @@ export default function CVModal({ isOpen, onClose, personal, experiences, skills
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md opacity-100">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-3 sm:p-6 bg-black/90 backdrop-blur-md opacity-100 transition-opacity duration-300">
       {/* Backdrop */}
       <div className="absolute inset-0" onClick={onClose} />
 
       {/* Modal Card */}
       <div
-        className="relative z-10 w-full max-w-4xl max-h-[92vh] bg-neutral-950 border border-neutral-800 rounded-3xl flex flex-col shadow-2xl overflow-hidden"
+        className="relative z-10 w-full max-w-4xl max-h-[92vh] bg-neutral-950 border border-neutral-800 rounded-3xl flex flex-col shadow-2xl overflow-hidden animate-scale-in"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header toolbar */}
@@ -48,7 +48,7 @@ export default function CVModal({ isOpen, onClose, personal, experiences, skills
             <a
               href={personal.cvPdfUrl}
               download
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-neutral-950 text-xs font-bold transition-all shadow-md cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-neutral-950 text-xs font-bold transition-all shadow-md cursor-pointer hover:scale-[1.03]"
               title="Download Official 1-Page PDF Resume"
             >
               <Download className="w-3.5 h-3.5" />
@@ -199,10 +199,13 @@ export default function CVModal({ isOpen, onClose, personal, experiences, skills
                 
                 <div className="flex flex-wrap gap-2 mt-3">
                   <span className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-orange-500/10 text-orange-400 border border-orange-500/20">
-                    ★ Pacco Bangladesh Commercial Designer
+                    ★ Pacco Bangladesh Commercial Designer (Active)
                   </span>
                   <span className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
-                    ★ PsyCoach Bangladesh Visual Lead
+                    ★ Ex-Visual Lead (PyCoach BD)
+                  </span>
+                  <span className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    ★ Ex-Academic Media (Al-Manarat)
                   </span>
                   <span className="px-2.5 py-1 rounded-lg text-xs font-semibold bg-neutral-900 text-neutral-300 border border-neutral-800 font-mono">
                     67+ Works Delivered
@@ -217,7 +220,7 @@ export default function CVModal({ isOpen, onClose, personal, experiences, skills
                   <span>Professional Summary</span>
                 </h3>
                 <p className="text-xs sm:text-sm text-neutral-300 leading-relaxed">
-                  Creative Graphic Designer and Creator Growth Specialist with a formal background in Communication & Multimedia Journalism from Islamic University. Experienced in crafting conversion-driven commercial advertising posters, high-CTR YouTube thumbnails, brand visual identity systems, and educational carousel infographics. Proven track record directing commercial print and digital campaigns at <strong className="text-white">Pacco Bangladesh</strong> and driving <strong className="text-white">+40% organic audience growth</strong> at <strong className="text-white">PsyCoach Bangladesh</strong>. Skilled in translating marketing concepts into scroll-stopping visual assets using Adobe Photoshop, Canva Pro, and Illustrator.
+                  Creative Graphic Designer and Creator Growth Specialist with a formal background in Communication & Multimedia Journalism from Islamic University. Experienced in crafting conversion-driven commercial advertising posters, high-CTR YouTube thumbnails, brand visual identity systems, and educational carousel infographics. Proven track record directing commercial print and digital campaigns at <strong className="text-white">Pacco Bangladesh</strong>, driving <strong className="text-white">+40% organic audience growth</strong> at <strong className="text-white">PsyCoach Bangladesh</strong>, and producing course media for <strong className="text-white">Al-Manarat Institute of Online Education</strong>. Skilled in translating marketing concepts into scroll-stopping visual assets using Adobe Photoshop, Canva Pro, and Illustrator.
                 </p>
               </div>
 
@@ -228,11 +231,16 @@ export default function CVModal({ isOpen, onClose, personal, experiences, skills
                   <span>Work Experience</span>
                 </h3>
 
-                {/* Pacco Bangladesh */}
+                {/* 1. Pacco Bangladesh (Active) */}
                 <div className="p-4 rounded-2xl bg-neutral-900/50 border border-neutral-800 space-y-2">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <h4 className="text-sm font-bold text-white">Commercial Advertising & Brand Designer</h4>
-                    <span className="text-[11px] font-mono text-amber-400 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/20">
+                    <div className="flex items-center gap-2">
+                      <h4 className="text-sm font-bold text-white">Commercial Advertising & Brand Designer</h4>
+                      <span className="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                        Active Role
+                      </span>
+                    </div>
+                    <span className="text-[11px] font-mono text-emerald-400 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
                       March 2026 – Present
                     </span>
                   </div>
@@ -244,19 +252,35 @@ export default function CVModal({ isOpen, onClose, personal, experiences, skills
                   </ul>
                 </div>
 
-                {/* PsyCoach Bangladesh */}
+                {/* 2. PyCoach Bangladesh (Completed) */}
                 <div className="p-4 rounded-2xl bg-neutral-900/50 border border-neutral-800 space-y-2">
                   <div className="flex flex-wrap items-center justify-between gap-2">
-                    <h4 className="text-sm font-bold text-white">Lead Visual & Thumbnail Designer</h4>
-                    <span className="text-[11px] font-mono text-amber-400 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/20">
-                      2023 – Present
+                    <h4 className="text-sm font-bold text-white">Former Lead Visual & Thumbnail Designer</h4>
+                    <span className="text-[11px] font-mono text-neutral-400 px-2 py-0.5 rounded bg-neutral-800 border border-neutral-700">
+                      2023 – 2025
                     </span>
                   </div>
-                  <p className="text-xs font-semibold text-blue-400">PsyCoach Bangladesh (Remote / Hybrid)</p>
+                  <p className="text-xs font-semibold text-blue-400">PyCoach Bangladesh (Remote / Hybrid • Completed Contract)</p>
                   <ul className="text-xs text-neutral-300 space-y-1.5 list-disc list-inside">
-                    <li>Direct high-converting social media creatives, promotional posters, and multi-slide educational carousels (<strong className="text-white">+40% organic engagement increase</strong>).</li>
+                    <li>Directed high-converting social media creatives, promotional posters, and multi-slide educational carousels (<strong className="text-white">+40% organic engagement increase</strong>).</li>
                     <li>Engineered custom YouTube thumbnail concepts with dramatic lighting, bold typography, and emotive subject framing.</li>
                     <li>Maintained 100% on-time delivery across all remote sprints using asynchronous communication.</li>
+                  </ul>
+                </div>
+
+                {/* 3. Al-Manarat Institute of Online Education (Completed) */}
+                <div className="p-4 rounded-2xl bg-neutral-900/50 border border-neutral-800 space-y-2">
+                  <div className="flex flex-wrap items-center justify-between gap-2">
+                    <h4 className="text-sm font-bold text-white">Creative & Academic Media Designer</h4>
+                    <span className="text-[11px] font-mono text-neutral-400 px-2 py-0.5 rounded bg-neutral-800 border border-neutral-700">
+                      2024 – 2025
+                    </span>
+                  </div>
+                  <p className="text-xs font-semibold text-emerald-400">Al-Manarat Institute of Online Education (Remote • Completed Contract)</p>
+                  <ul className="text-xs text-neutral-300 space-y-1.5 list-disc list-inside">
+                    <li>Designed Islamic University admission coaching campaigns, Arabic grammar (Nahw-Sarf) live class banners, and course launch collaterals for At-Tadrees Online Madrasah.</li>
+                    <li>Created high-enrollment social media promotional posts and student acquisition creatives.</li>
+                    <li>Maintained consistent Arabic and Bengali typographic hierarchy across online academic channels.</li>
                   </ul>
                 </div>
               </div>

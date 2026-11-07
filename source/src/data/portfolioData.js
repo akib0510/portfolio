@@ -4,7 +4,7 @@ export const portfolioData = {
   personal: {
     name: "Akib Hossian Dipu",
     title: "Remote Graphic Designer & Visual Content Specialist",
-    tagline: "Crafting conversion-driven social media ad creatives, high-CTR YouTube thumbnails, brand visual identities, and commercial print assets.",
+    tagline: "Crafting conversion-driven commercial posters, high-CTR YouTube thumbnails, educational course creatives, and brand visual identities.",
     location: "Dhaka, Bangladesh (UTC+6)",
     email: "akibdipu79@gmail.com",
     phone: "+880 1612064436",
@@ -16,9 +16,9 @@ export const portfolioData = {
       email: "mailto:akibdipu79@gmail.com",
       whatsapp: "https://wa.me/8801612064436",
     },
-    about: `Creative Graphic Designer and Visual Content Specialist with a formal background in Communication & Multimedia Journalism from Islamic University. Experienced in crafting conversion-driven social media ad creatives, multi-slide educational carousels, brand identities, and promotional visual assets at PsyCoach Bangladesh and for global remote clients. 
+    about: `Creative Graphic Designer and Visual Content Specialist with a formal background in Communication & Multimedia Journalism from Islamic University. Experienced in crafting conversion-driven commercial advertising posters, high-CTR YouTube thumbnails, brand visual identity systems, and educational carousel infographics.
 
-Skilled in translating abstract brand and marketing ideas into clean, scroll-stopping visuals using Adobe Photoshop, Canva Pro, and Illustrator. Self-directed, highly responsive in async workflows, and committed to fast design turnarounds.`,
+Proven track record directing commercial print and digital campaigns at Pacco Bangladesh, driving organic audience growth at PyCoach Bangladesh, and designing academic course visual media for Al-Manarat Institute of Online Education. Skilled in translating marketing concepts into scroll-stopping visuals using Adobe Photoshop, Canva Pro, and Illustrator with seamless async collaboration across global teams.`,
     stats: [
       { label: "Thumbnails & Designs", value: "67+" },
       { label: "Organic Engagement", value: "+40%" },
@@ -35,13 +35,13 @@ Skilled in translating abstract brand and marketing ideas into clean, scroll-sto
     {
       category: "Design Disciplines",
       items: [
+        "Commercial Banners & Posters",
+        "High-CTR YouTube Thumbnails",
         "Social Media Ad Creatives (Meta/IG)",
+        "Educational Course Graphics",
         "Carousel Infographics & Decks",
         "Brand Identity & Style Guidelines",
-        "High-CTR YouTube Thumbnails",
-        "Layout Composition & Typography",
         "Short-Form Video Motion Graphics",
-        "Commercial Banners & Posters",
       ],
     },
     {
@@ -54,14 +54,23 @@ Skilled in translating abstract brand and marketing ideas into clean, scroll-sto
     {
       period: "March 2026 - Present",
       role: "Commercial Advertising & Brand Designer",
-      company: "Pacco Bangladesh",
-      description: "Leading visual advertising campaigns, parcel pickup & delivery posters, tiffin service collaterals, and digital promotional assets across Jashore district.",
+      company: "Pacco Bangladesh (Active / Current)",
+      isCurrent: true,
+      description: "Leading visual advertising campaigns, regional launch banners (Chowgacha regional launch, 2-day countdowns), parcel pickup & delivery posters, tiffin service collaterals, and digital promotional assets across Jashore district.",
     },
     {
-      period: "2023 - Present",
-      role: "Lead Visual & Thumbnail Designer",
-      company: "PsyCoach Bangladesh (Remote / Hybrid)",
-      description: "Directing high-converting social media creatives, promotional posters, and ad banners. Engineered custom YouTube thumbnail concepts with dramatic lighting, bold typography, and emotive subject framing (+40% organic engagement).",
+      period: "2023 - 2025",
+      role: "Former Lead Visual & Thumbnail Designer",
+      company: "PyCoach Bangladesh (Remote / Hybrid • Completed)",
+      isCurrent: false,
+      description: "Directed high-converting social media creatives, promotional posters, and multi-slide educational carousels (+40% organic audience growth). Engineered custom YouTube thumbnail concepts with high-contrast lighting and emotive framing.",
+    },
+    {
+      period: "2024 - 2025",
+      role: "Creative & Academic Media Designer",
+      company: "Al-Manarat Institute of Online Education (Remote • Completed)",
+      isCurrent: false,
+      description: "Designed Islamic University admission coaching campaigns, Arabic grammar (Nahw-Sarf) foundation course collaterals, online Madrasah banners (At-Tadrees), and high-enrollment social media promotional posts.",
     },
   ],
 

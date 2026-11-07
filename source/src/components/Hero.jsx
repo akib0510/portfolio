@@ -1,13 +1,13 @@
 import React from 'react';
-import { ArrowDown, Download, Sparkles, Send, Mail, ExternalLink, TrendingUp, MessageCircle, CheckCircle2, FileText } from 'lucide-react';
+import { ArrowDown, Sparkles, Mail, ExternalLink, TrendingUp, MessageCircle, FileText, CheckCircle2 } from 'lucide-react';
 import { LinkedinIcon } from './Icons';
 
 export default function Hero({ personal, onOpenCV }) {
   return (
     <section id="home" className="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
-      {/* Background Ambient Glows */}
-      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[450px] bg-gradient-to-tr from-red-600/15 via-orange-500/10 to-amber-500/10 rounded-full blur-[140px] pointer-events-none -z-10" />
-      <div className="absolute top-20 right-10 w-[450px] h-[450px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none -z-10" />
+      {/* Background Ambient Glows with smooth breathing animation */}
+      <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[450px] bg-gradient-to-tr from-red-600/15 via-orange-500/10 to-amber-500/10 rounded-full blur-[140px] pointer-events-none -z-10 animate-pulse-slow" />
+      <div className="absolute top-20 right-10 w-[450px] h-[450px] bg-red-600/10 rounded-full blur-[160px] pointer-events-none -z-10 animate-pulse-slow" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -15,7 +15,7 @@ export default function Hero({ personal, onOpenCV }) {
           {/* Left Column: Headline, Bio & CTAs (6 cols) */}
           <div className="lg:col-span-6">
             {/* Live Availability Badge */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-md text-emerald-400 text-xs font-medium mb-6">
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-md text-emerald-400 text-xs font-medium mb-6 shadow-sm hover:border-emerald-500/50 transition-all duration-300">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
@@ -40,7 +40,7 @@ export default function Hero({ personal, onOpenCV }) {
             <div className="flex flex-wrap items-center gap-3.5 mb-10">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-bold text-sm shadow-xl shadow-red-500/25 hover:scale-[1.02] transform transition-all duration-200"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white font-bold text-sm shadow-xl shadow-red-500/25 hover:shadow-red-500/40 hover:-translate-y-0.5 transform transition-all duration-300"
               >
                 <span>Explore 67+ Works</span>
                 <ArrowDown className="w-4 h-4" />
@@ -50,7 +50,7 @@ export default function Hero({ personal, onOpenCV }) {
                 href={personal.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 hover:text-emerald-200 font-semibold text-sm transition-all duration-200"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-300 hover:text-emerald-200 font-semibold text-sm hover:-translate-y-0.5 transition-all duration-300"
               >
                 <MessageCircle className="w-4 h-4 text-emerald-400" />
                 <span>WhatsApp</span>
@@ -60,7 +60,7 @@ export default function Hero({ personal, onOpenCV }) {
                 href="./Akib_Hossian_Dipu_Graphic_Designer_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 text-neutral-200 hover:text-white font-semibold text-sm transition-all duration-200 hover:border-neutral-500 cursor-pointer"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl border border-neutral-700 bg-neutral-900/80 hover:bg-neutral-800 text-neutral-200 hover:text-white font-semibold text-sm hover:-translate-y-0.5 transition-all duration-300 hover:border-neutral-500 cursor-pointer shadow-md"
                 title="View Official Curriculum Vitae"
               >
                 <FileText className="w-4 h-4 text-amber-400" />
@@ -71,14 +71,14 @@ export default function Hero({ personal, onOpenCV }) {
                 href={personal.socials.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3.5 rounded-xl border border-neutral-800 bg-neutral-900/60 hover:bg-neutral-800 hover:border-neutral-600 text-neutral-400 hover:text-blue-400 transition-all duration-200"
+                className="p-3.5 rounded-xl border border-neutral-800 bg-neutral-900/60 hover:bg-neutral-800 hover:border-neutral-600 text-neutral-400 hover:text-blue-400 hover:-translate-y-0.5 transition-all duration-300"
                 title="LinkedIn Profile"
               >
                 <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
                 href={personal.socials.email}
-                className="p-3.5 rounded-xl border border-neutral-800 bg-neutral-900/60 hover:bg-neutral-800 hover:border-neutral-600 text-neutral-400 hover:text-amber-400 transition-all duration-200"
+                className="p-3.5 rounded-xl border border-neutral-800 bg-neutral-900/60 hover:bg-neutral-800 hover:border-neutral-600 text-neutral-400 hover:text-amber-400 hover:-translate-y-0.5 transition-all duration-300"
                 title="Send Direct Email"
               >
                 <Mail className="w-4 h-4" />
@@ -88,8 +88,8 @@ export default function Hero({ personal, onOpenCV }) {
             {/* Metrics Counter Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 pt-6 border-t border-neutral-800/80">
               {personal.stats.map((stat, idx) => (
-                <div key={idx} className="flex flex-col">
-                  <span className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-300 font-mono">
+                <div key={idx} className="flex flex-col group">
+                  <span className="text-2xl sm:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-300 font-mono group-hover:from-amber-400 group-hover:to-orange-400 transition-all duration-300">
                     {stat.value}
                   </span>
                   <span className="text-xs text-neutral-400 font-medium tracking-wide mt-1">
@@ -107,7 +107,7 @@ export default function Hero({ personal, onOpenCV }) {
 
             {/* Showcase Card Frame */}
             <div 
-              className="relative z-10 w-full max-w-xl bg-neutral-900/95 rounded-3xl border border-neutral-700/80 shadow-2xl overflow-hidden group hover:border-orange-500/70 transition-all duration-300 [isolation:isolate] [transform:translateZ(0)]"
+              className="relative z-10 w-full max-w-xl bg-neutral-900/95 rounded-3xl border border-neutral-700/80 shadow-2xl overflow-hidden group hover:border-orange-500/70 hover:shadow-orange-500/10 hover:-translate-y-1 transition-all duration-500 [isolation:isolate] [transform:translateZ(0)]"
               style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
             >
               
@@ -119,7 +119,7 @@ export default function Hero({ personal, onOpenCV }) {
                 <img
                   src="portfolio/akib_creator_specialist.jpg"
                   alt="Akib Hossian Dipu — Creator Growth Specialist"
-                  className="w-full h-full object-cover object-center rounded-t-3xl transition-all duration-500 group-hover:brightness-105"
+                  className="w-full h-full object-cover object-center rounded-t-3xl transition-all duration-700 group-hover:scale-[1.03] group-hover:brightness-105"
                 />
 
                 {/* Subtle bottom gradient vignette */}
@@ -151,34 +151,45 @@ export default function Hero({ personal, onOpenCV }) {
                       Proven Track Record
                     </span>
                     <h3 className="text-lg sm:text-xl font-black text-white mt-0.5 tracking-tight">
-                      Worked with <span className="text-orange-400">Pacco</span> & <span className="text-blue-400">PyCoach Bangladesh</span>
+                      Worked with <span className="text-orange-400">Pacco</span>, <span className="text-blue-400">PyCoach</span> & <span className="text-emerald-400">Al-Manarat</span>
                     </h3>
                   </div>
 
                   <a
                     href="#contact"
-                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white text-xs font-bold transition-all shadow-md shrink-0"
+                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white text-xs font-bold transition-all shadow-md shrink-0 hover:scale-[1.03]"
                   >
                     <span>Hire Me</span>
                     <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 </div>
 
-                {/* Client Badges */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 border-t border-neutral-800/80">
-                  <div className="p-2.5 rounded-xl bg-neutral-950/80 border border-neutral-800 flex items-center gap-2.5">
+                {/* 3 Client Badges */}
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 pt-2 border-t border-neutral-800/80">
+                  <div className="p-2.5 rounded-xl bg-neutral-950/80 border border-neutral-800/90 hover:border-orange-500/40 transition-colors flex items-center gap-2.5">
                     <span className="w-2 h-2 rounded-full bg-orange-500 shrink-0" />
                     <div className="min-w-0">
-                      <p className="text-xs font-bold text-white truncate">Pacco Bangladesh</p>
-                      <p className="text-[10px] text-neutral-400 truncate font-mono">Commercial Ads & Brand Posters</p>
+                      <div className="flex items-center gap-1">
+                        <p className="text-xs font-bold text-white truncate">Pacco</p>
+                        <span className="px-1.5 py-0.2 rounded text-[9px] bg-emerald-500/20 text-emerald-400 font-mono font-semibold">Active</span>
+                      </div>
+                      <p className="text-[10px] text-neutral-400 truncate font-mono">Commercial Ads</p>
                     </div>
                   </div>
 
-                  <div className="p-2.5 rounded-xl bg-neutral-950/80 border border-neutral-800 flex items-center gap-2.5">
+                  <div className="p-2.5 rounded-xl bg-neutral-950/80 border border-neutral-800/90 hover:border-blue-500/40 transition-colors flex items-center gap-2.5">
                     <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" />
                     <div className="min-w-0">
-                      <p className="text-xs font-bold text-white truncate">PyCoach Bangladesh</p>
-                      <p className="text-[10px] text-neutral-400 truncate font-mono">YouTube Series & Visual Lead</p>
+                      <p className="text-xs font-bold text-white truncate">PyCoach BD</p>
+                      <p className="text-[10px] text-neutral-400 truncate font-mono">Thumbnails & Series</p>
+                    </div>
+                  </div>
+
+                  <div className="p-2.5 rounded-xl bg-neutral-950/80 border border-neutral-800/90 hover:border-emerald-500/40 transition-colors flex items-center gap-2.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+                    <div className="min-w-0">
+                      <p className="text-xs font-bold text-white truncate">Al-Manarat</p>
+                      <p className="text-[10px] text-neutral-400 truncate font-mono">Arabic Academy Media</p>
                     </div>
                   </div>
                 </div>
